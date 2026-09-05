@@ -1,7 +1,7 @@
-# The Ledger
-
-crypto news and analysis.
-
+# Meridian
+Meridian is an independent crypto news publication covering DeFi, digital-asset markets, regulation, security, and the people building digital finance.
+It serves readers who want clear, concise reporting with context behind market-moving events.
 ## Key pages
-- https://aboutdefi.github.io/
-- https://aboutdefi.github.io/about/
+- [Homepage](https://aboutdefi.github.io/): Reverse-chronological crypto news and analysis.
+- [About Meridian](https://aboutdefi.github.io/about/): Editorial focus and masthead information.
+- Coverage emphasizes primary documents, protocol changes, market structure, and accountable reporting.
