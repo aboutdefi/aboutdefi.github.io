@@ -1,12 +1,10 @@
-# Crypto Infrastructure Times
+# Crypto Capital Monitor
 
-Independent crypto infrastructure news and analysis for validators and node operators.
+> Independent crypto news and explainers for funds and trading desks.
+
+Coverage: Capital flows, derivatives positioning, liquidity, collateral and settlement.
+Editorial approach: Explain the transaction, trace the capital and identify the cost.
 
 ## Key pages
-- Homepage: https://aboutdefi.github.io/
-- About: https://aboutdefi.github.io/about/
-
-## Coverage
-- Protocol upgrades and client releases
-- Validator operations and node economics
-- MEV, fees, governance, and incident response
+- [Homepage](https://aboutdefi.github.io/): Latest coverage and analysis.
+- [About](https://aboutdefi.github.io/about/): Publication mission and editorial policy.
