@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://aboutdefi.github.io/</loc><lastmod>2026-09-09</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://aboutdefi.github.io/five-checks-that-reveal-what-an-nft-owner-actually-controls/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://aboutdefi.github.io/atomic-ethereum-trades-depend-on-one-state-transition/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://aboutdefi.github.io/slippage-settings-decide-which-trades-reach-settlement/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://aboutdefi.github.io/classifying-wallet-behavior-requires-transaction-context/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -13,8 +14,8 @@
 <url><loc>https://aboutdefi.github.io/ethena-pay-turns-usde-into-a-high-yield-spending-account/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://aboutdefi.github.io/topics/exchange-liquidity-and-execution-costs/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
 <url><loc>https://aboutdefi.github.io/topics/stablecoin-issuance-redemptions-and-settlement/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-<url><loc>https://aboutdefi.github.io/topics/custody-clearing-and-market-access/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
 <url><loc>https://aboutdefi.github.io/topics/onchain-lending-and-collateral-mechanics/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+<url><loc>https://aboutdefi.github.io/topics/custody-clearing-and-market-access/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
 <url><loc>https://aboutdefi.github.io/topics/derivatives-positioning-funding-and-liquidations/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
 <url><loc>https://aboutdefi.github.io/topics/fund-flows-and-etf-creation-mechanics/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
 <url><loc>https://aboutdefi.github.io/archive/</loc><priority>0.3</priority></url>
