@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How SyncSwap Routes Trades Across Pool Models</title>
+<meta name="description" content="SyncSwap splits and chains orders across four pool designs, improving executable size only when lower price impact outweighs fees, gas and route complexity.">
+<link rel="canonical" href="https://aboutdefi.github.io/syncswaps-four-pool-router-makes-liquidity-conditional/">
+<meta name="robots" content="all, max-image-preview:large"><meta name="theme-color" content="#f1ece2">
+<meta name="author" content="The Crypto Capital Monitor Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Capital Monitor">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="SyncSwap’s Four-Pool Router Makes Liquidity Conditional">
+<meta property="og:description" content="SyncSwap splits and chains orders across four pool designs, improving executable size only when lower price impact outweighs fees, gas and route complexity.">
+<meta property="og:url" content="https://aboutdefi.github.io/syncswaps-four-pool-router-makes-liquidity-conditional/">
+<meta property="og:image" content="https://aboutdefi.github.io/assets/covers/syncswaps-four-pool-router-makes-liquidity-conditional-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SyncSwap’s Four-Pool Router Makes Liquidity Conditional"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SyncSwap’s Four-Pool Router Makes Liquidity Conditional">
+<meta name="twitter:description" content="SyncSwap splits and chains orders across four pool designs, improving executable size only when lower price impact outweighs fees, gas and route complexity.">
+<meta property="article:published_time" content="2026-09-11T17:28:11+00:00">
+<meta property="article:section" content="Exchange liquidity and execution costs"><meta property="article:tag" content="Exchange liquidity and execution costs">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s095a5e7f15.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Capital Monitor" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://aboutdefi.github.io/syncswaps-four-pool-router-makes-liquidity-conditional/#article",
+      "headline": "SyncSwap’s Four-Pool Router Makes Liquidity Conditional",
+      "isAccessibleForFree": true,
+      "description": "SyncSwap splits and chains orders across four pool designs, improving executable size only when lower price impact outweighs fees, gas and route complexity.",
+      "datePublished": "2026-09-11T17:28:11+00:00",
+      "dateModified": "2026-09-11T17:28:11+00:00",
+      "url": "https://aboutdefi.github.io/syncswaps-four-pool-router-makes-liquidity-conditional/",
+      "mainEntityOfPage": {
+        "@id": "https://aboutdefi.github.io/syncswaps-four-pool-router-makes-liquidity-conditional/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://aboutdefi.github.io/#editorial",
+        "name": "The Crypto Capital Monitor Desk",
+        "parentOrganization": {
+          "@id": "https://aboutdefi.github.io/#org"
+        }
+      },
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "keywords": "Exchange liquidity and execution costs",
+      "articleSection": "Exchange liquidity and execution costs",
+      "wordCount": 623,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/covers/syncswaps-four-pool-router-makes-liquidity-conditional.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aboutdefi.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "SyncSwap’s Four-Pool Router Makes Liquidity Conditional",
+          "item": "https://aboutdefi.github.io/syncswaps-four-pool-router-makes-liquidity-conditional/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://aboutdefi.github.io/#org",
+      "name": "Crypto Capital Monitor",
+      "url": "https://aboutdefi.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/apple-touch-icon.png"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aboutdefi.github.io/#website",
+      "name": "Crypto Capital Monitor",
+      "url": "https://aboutdefi.github.io/",
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Independent crypto news and explainers for funds and trading desks, tracing capital flows, derivatives positioning and the mechanics behind market moves."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aboutdefi.github.io/syncswaps-four-pool-router-makes-liquidity-conditional/#webpage",
+      "url": "https://aboutdefi.github.io/syncswaps-four-pool-router-makes-liquidity-conditional/",
+      "name": "How SyncSwap Routes Trades Across Pool Models",
+      "isPartOf": {
+        "@id": "https://aboutdefi.github.io/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sa35c20c" href="#main">Skip to main content</a>
+<header class="s1fc46e2"><a href="/"><strong>Crypto Capital Monitor</strong></a> <span>Crypto news on capital flows, positioning and market structure</span></header>
+
+<main id="main">
+<article class="s1fc46e2 se6b3379">
+  <header class="sf1424c0">
+    <div class="sdc109f9">
+      <span class="s8b75f85">Exchange liquidity and execution costs</span>
+      <span>Crypto Capital Monitor</span>
+    </div>
+    <h1>SyncSwap’s Four-Pool Router Makes Liquidity Conditional</h1>
+    <p class="sc656793">SyncSwap splits and chains orders across four pool designs, improving executable size only when lower price impact outweighs fees, gas and route complexity.</p>
+    <div class="s69bc718">
+      <span class="s397ea11">By The Crypto Capital Monitor Desk</span>
+      <time datetime="2026-09-11T17:28:11+00:00">Sep 11, 2026</time>
+      <span>3 min read</span>
+    </div>
+  </header>
+
+  <figure class="sd0859df">
+    <img src="/assets/covers/syncswaps-four-pool-router-makes-liquidity-conditional.jpg" alt="SyncSwap’s Four-Pool Router Makes Liquidity Conditional" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+
+  <div class="sf51fef0">
+    <div class="sf96a061"><p>SyncSwap routes a trade by quoting Classic, Stable, Aqua and Range pools, then encoding one or more paths whose combined output clears the user’s minimum. The desk-level puzzle in 2026 is why four available pool models can still leave a large order thin: liquidity exists, but not every dollar sits on a curve, at a price or inside a range that can absorb the next dollar cheaply.</p>
+
+<h2>Why does liquidity not equal executable size?</h2>
+<p>Executable size depends on each pool’s marginal quote, not the protocol’s aggregate deposits. Liquidity providers supply the paired reserves that take the other side; in concentrated designs, only capital active near the current price contributes. A stablecoin pool may show ample reserves yet become progressively expensive as an order pulls it away from parity. A Range position can be deep at the spot price and irrelevant after price crosses its chosen band.</p>
+
+<p>The router therefore compares complete routes by expected output. It can use a direct pool, hop through a common base asset, or split the input across paths. That creates capacity without creating liquidity: the trade simply draws from several inventories before any one curve becomes too steep.</p>
+
+<h2>Four curves, four jobs</h2>
+<ul>
+<li><strong>Classic</strong> uses the constant-product x*y=k curve, keeping a quote across the full price range but allowing price impact to rise with order size.</li>
+<li><strong>Stable</strong> uses a hybrid curve that behaves closer to constant sum near a 1:1 peg and falls back toward constant product as the pair diverges.</li>
+<li><strong>Aqua</strong> automatically concentrates liquidity around its internal market price and can raise fees as imbalance increases, trading passive efficiency for model risk.</li>
+<li><strong>Range</strong> lets providers choose price bands, increasing capital efficiency near spot while making out-of-range capital unavailable.</li>
+</ul>
+
+<p>Aqua is not merely Range without manual maintenance. Range providers choose where their inventory works; Aqua’s curve re-centers concentration and adjusts its fee. Classic remains the broad fallback, while Stable is specialized for correlated assets.</p>
+
+<h2>How does a split route settle?</h2>
+<p>It settles as one atomic transaction. The trader approves and prefunds the input; the router transfers those tokens into the Vault and credits the first pool in each path. That pool applies its invariant and fee, then makes its output available to the next pool through an internal Vault transfer. Only the last step sends the requested token to the recipient. The current developer interface for <a href="https://syncswap.dev" rel="noopener">Syncswap</a> represents the order as paths containing sequential pool steps and an amount for each path. Final outputs are added together; if the total misses the minimum or the deadline has passed, the transaction reverts.</p>
+
+<p>Consider a simplified, hypothetical $100,000 USDC-to-USDT order. One Stable pool returns $99,840 after fee and price impact. Splitting $70,000 to Stable for $69,930 and $30,000 to Classic for $29,955 produces $99,885, a $45 gross improvement. If the extra path costs the equivalent of $6 more in gas, the desk keeps $39. A third route offering $15 more output but adding $22 of execution cost should be rejected.</p>
+
+<h2>The marginal route sets the verdict</h2>
+<p>The closest traditional analogy is a smart order router sweeping several exchanges. It breaks down because these are formulas against LP inventory, not independent order books with resting limit orders; the trade itself moves each pool’s next quote, while the shared Vault can pass intermediate balances without external settlement between hops.</p>
+
+<p>Traders gain executable capacity and atomic protection. Active LPs gain flow and fees, but absorb inventory drift, adverse selection and the risk that concentrated capital stops working. The trader also pays every pool fee and the computation cost of extra steps. That allocation matters more than the “four models” headline: SyncSwap’s router is valuable only when the final, gas-adjusted output beats the best simple route without shifting unacceptable tail exposure onto a fragile pool.</p></div>
+
+    <section class="s7eccab0" aria-labelledby="tags-heading">
+      <h2 id="tags-heading">Topics</h2>
+      <ul>
+        <li>Exchange liquidity and execution costs</li>
+      </ul>
+    </section>
+
+    <aside class="sdaad7b1" aria-labelledby="related-heading">
+      <div class="sb23ae5d">
+        <h2 id="related-heading">Further reading</h2>
+        <span>crypto</span>
+      </div>
+      <ul>
+        <li><a href="/a-public-key-proves-a-signature-not-a-settlement/">A Public Key Proves a Signature, Not a Settlement</a></li>
+        <li><a href="/airdrop-eligibility-is-the-real-allocation-engine/">Airdrop Eligibility Is the Real Allocation Engine</a></li>
+        <li><a href="/how-universal-bridge-handles-assets-without-smart-contracts/">How Universal Bridge Handles Assets Without Smart Contracts</a></li>
+        <li><a href="/token-metadata-stays-mutable-when-bridges-own-the-list/">Token Metadata Stays Mutable When Bridges Own the List</a></li>
+      </ul>
+    </aside>
+  </div>
+</article>
+</main>
+
+<footer class="s1fc46e2"><nav><a href="/">Home</a> <a href="/archive/">Archive</a> <a href="/about/">Masthead</a> <a href="/privacy/">Privacy</a> </nav><nav><a href="/topics/exchange-liquidity-and-execution-costs/">Exchange liquidity and execution costs</a> <a href="/topics/onchain-lending-and-collateral-mechanics/">Onchain lending and collateral mechanics</a> <a href="/topics/stablecoin-issuance-redemptions-and-settlement/">Stablecoin issuance, redemptions and settlement</a> <a href="/topics/custody-clearing-and-market-access/">Custody, clearing and market access</a> <a href="/topics/fund-flows-and-etf-creation-mechanics/">Fund flows and ETF creation mechanics</a> </nav><p>Crypto Capital Monitor is an independent publication, is not affiliated with or endorsed by any protocol, exchange or project it covers, and provides no financial advice.</p><p>© 2026 Crypto Capital Monitor</p></footer>
+</body>
+</html>
