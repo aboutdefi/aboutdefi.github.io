@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Public Keys Verify Digital Signatures</title>
+<meta name="description" content="Public-key verification proves the matching private key signed unchanged transaction data, but custody policy and settlement still determine usable liquidity.">
+<link rel="canonical" href="https://aboutdefi.github.io/a-public-key-proves-a-signature-not-a-settlement/">
+<meta name="robots" content="all, max-image-preview:large"><meta name="theme-color" content="#f1ece2">
+<meta name="author" content="The Crypto Capital Monitor Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Capital Monitor">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="A Public Key Proves a Signature, Not a Settlement">
+<meta property="og:description" content="Public-key verification proves the matching private key signed unchanged transaction data, but custody policy and settlement still determine usable liquidity.">
+<meta property="og:url" content="https://aboutdefi.github.io/a-public-key-proves-a-signature-not-a-settlement/">
+<meta property="og:image" content="https://aboutdefi.github.io/assets/covers/a-public-key-proves-a-signature-not-a-settlement-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A Public Key Proves a Signature, Not a Settlement"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A Public Key Proves a Signature, Not a Settlement">
+<meta name="twitter:description" content="Public-key verification proves the matching private key signed unchanged transaction data, but custody policy and settlement still determine usable liquidity.">
+<meta property="article:published_time" content="2026-09-11T12:34:57+00:00">
+<meta property="article:section" content="Derivatives positioning, funding and liquidations"><meta property="article:tag" content="Derivatives positioning, funding and liquidations">
+<meta property="article:tag" content="Exchange liquidity and execution costs">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s095a5e7f15.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Capital Monitor" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://aboutdefi.github.io/a-public-key-proves-a-signature-not-a-settlement/#article",
+      "headline": "A Public Key Proves a Signature, Not a Settlement",
+      "isAccessibleForFree": true,
+      "description": "Public-key verification proves the matching private key signed unchanged transaction data, but custody policy and settlement still determine usable liquidity.",
+      "datePublished": "2026-09-11T12:34:57+00:00",
+      "dateModified": "2026-09-11T12:34:57+00:00",
+      "url": "https://aboutdefi.github.io/a-public-key-proves-a-signature-not-a-settlement/",
+      "mainEntityOfPage": {
+        "@id": "https://aboutdefi.github.io/a-public-key-proves-a-signature-not-a-settlement/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://aboutdefi.github.io/#editorial",
+        "name": "The Crypto Capital Monitor Desk",
+        "parentOrganization": {
+          "@id": "https://aboutdefi.github.io/#org"
+        }
+      },
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "keywords": "Derivatives positioning, funding and liquidations, Exchange liquidity and execution costs",
+      "articleSection": "Derivatives positioning, funding and liquidations",
+      "wordCount": 568,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/covers/a-public-key-proves-a-signature-not-a-settlement.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aboutdefi.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "A Public Key Proves a Signature, Not a Settlement",
+          "item": "https://aboutdefi.github.io/a-public-key-proves-a-signature-not-a-settlement/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://aboutdefi.github.io/#org",
+      "name": "Crypto Capital Monitor",
+      "url": "https://aboutdefi.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/apple-touch-icon.png"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aboutdefi.github.io/#website",
+      "name": "Crypto Capital Monitor",
+      "url": "https://aboutdefi.github.io/",
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Independent crypto news and explainers for funds and trading desks, tracing capital flows, derivatives positioning and the mechanics behind market moves."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aboutdefi.github.io/a-public-key-proves-a-signature-not-a-settlement/#webpage",
+      "url": "https://aboutdefi.github.io/a-public-key-proves-a-signature-not-a-settlement/",
+      "name": "How Public Keys Verify Digital Signatures",
+      "isPartOf": {
+        "@id": "https://aboutdefi.github.io/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sa35c20c" href="#main">Skip to main content</a>
+<header class="s1fc46e2"><a href="/"><strong>Crypto Capital Monitor</strong></a> <span>Crypto news on capital flows, positioning and market structure</span></header>
+
+<main id="main">
+<article class="s1fc46e2 se6b3379">
+  <header class="sf1424c0">
+    <div class="sdc109f9">
+      <span class="s8b75f85">Derivatives positioning, funding and liquidations</span>
+      <span>Crypto Capital Monitor</span>
+    </div>
+    <h1>A Public Key Proves a Signature, Not a Settlement</h1>
+    <p class="sc656793">Public-key verification proves the matching private key signed unchanged transaction data, but custody policy and settlement still determine usable liquidity.</p>
+    <div class="s69bc718">
+      <span class="s397ea11">By The Crypto Capital Monitor Desk</span>
+      <time datetime="2026-09-11T12:34:57+00:00">Sep 11, 2026</time>
+      <span>3 min read</span>
+    </div>
+  </header>
+
+  <figure class="sd0859df">
+    <img src="/assets/covers/a-public-key-proves-a-signature-not-a-settlement.jpg" alt="A Public Key Proves a Signature, Not a Settlement" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+
+  <div class="sf51fef0">
+    <div class="sf96a061"><p>A public key verifies a digital signature by checking that a private key signed a particular message without revealing that private key. For a fund, the practical puzzle is narrower: if its custodian accepts a signed $20 million collateral transfer, why can the trading desk still be unable to use the collateral? Verification proves control of a key and the integrity of transaction data; it does not complete policy approval, blockchain settlement or venue credit.</p>
+
+<h2>How does a public key check a signature?</h2>
+<p>The verifier tests a mathematical relationship among the public key, the message and the signature. First, the fund builds the transaction: destination address, amount, fee, network identifier and a nonce that prevents replay. A signing device hashes those exact bytes, then uses the private key to produce a signature. The private key stays inside the custodian’s hardware module or distributed signing system.</p>
+<p>A node or custodian then:</p>
+<ul>
+<li>recreates the hash from the received transaction;</li>
+<li>checks the signature against that hash and the public key;</li>
+<li>rejects the request if even one transaction field changed; and</li>
+<li>separately checks balance, nonce and policy before broadcast.</li>
+</ul>
+<p>The public key does not decrypt the signature, and successful verification does not expose the private key. It confirms that the signature and message fit the key pair’s rules.</p>
+
+<h2>The transaction still has a queue</h2>
+<p>Once the signature passes, the custodian may require an allowlisted address, a second approver or a withdrawal limit check. The network must accept the transaction, validators must include it, and the venue receiving the collateral may wait for finality before extending buying power. Only then can a market maker or other counterparty take the opposite side with confidence that margin is available.</p>
+<p>That gap between authorization and availability also appears in bridge operations; the <a href="https://chainbrief.pages.dev/manta-bridge-deposits-are-fast-withdrawals-remain-capital-heavy/" rel="noopener">Manta Bridge</a> analysis shows why a completed inbound step need not make the reverse path equally light on capital.</p>
+
+<h2>What does verification actually prove?</h2>
+<p>It proves two narrow claims: the signature was made with the private key corresponding to the supplied public key, and the signed message has not been altered. It does not prove that the key holder is the legal owner, that an employee had authority to trade, or that a transfer is economically sensible.</p>
+<p>The closest familiar arrangement is a bank checking an authorized signature on a payment instruction. The analogy breaks because a bank can rely on customer records, reverse some errors and exercise discretion. A blockchain verifier applies a mathematical rule. Identity, mandate and recovery sit in custody controls around that rule.</p>
+
+<h2>The liquidity consequence outweighs the cryptography</h2>
+<p>Consider a clearly labeled hypothetical. A fund wants to post $20 million to a derivatives venue that requires 20% initial margin and grants no provisional credit. Its existing $5 million supports only $25 million of notional exposure; after the transfer becomes usable, $25 million of total collateral supports $125 million, before haircuts. A valid signature produced at noon does not create that extra $100 million of capacity if compliance releases the transfer at 12:10 and the venue credits it at 12:20.</p>
+<p>The fund gains capacity only at the final credit step. Until then, it absorbs missed execution, funding or liquidation risk, while the custodian and venue reduce fraud and reversal exposure. That allocation deserves more weight than the headline claim that public-key verification is “instant.” The cryptography can settle the authenticity question quickly; operational liquidity follows the slowest control after it.</p></div>
+
+    <section class="s7eccab0" aria-labelledby="tags-heading">
+      <h2 id="tags-heading">Topics</h2>
+      <ul>
+        <li>Derivatives positioning, funding and liquidations</li>
+        <li>Exchange liquidity and execution costs</li>
+      </ul>
+    </section>
+
+    <aside class="sdaad7b1" aria-labelledby="related-heading">
+      <div class="sb23ae5d">
+        <h2 id="related-heading">Further reading</h2>
+        <span>crypto</span>
+      </div>
+      <ul>
+        <li><a href="/airdrop-eligibility-is-the-real-allocation-engine/">Airdrop Eligibility Is the Real Allocation Engine</a></li>
+        <li><a href="/how-universal-bridge-handles-assets-without-smart-contracts/">How Universal Bridge Handles Assets Without Smart Contracts</a></li>
+        <li><a href="/token-metadata-stays-mutable-when-bridges-own-the-list/">Token Metadata Stays Mutable When Bridges Own the List</a></li>
+        <li><a href="/four-steps-that-move-stablecoins-beyond-correspondent-banking/">Four Steps That Move Stablecoins Beyond Correspondent Banking</a></li>
+      </ul>
+    </aside>
+  </div>
+</article>
+</main>
+
+<footer class="s1fc46e2"><nav><a href="/">Home</a> <a href="/archive/">Archive</a> <a href="/about/">Masthead</a> <a href="/privacy/">Privacy</a> </nav><nav><a href="/topics/exchange-liquidity-and-execution-costs/">Exchange liquidity and execution costs</a> <a href="/topics/onchain-lending-and-collateral-mechanics/">Onchain lending and collateral mechanics</a> <a href="/topics/stablecoin-issuance-redemptions-and-settlement/">Stablecoin issuance, redemptions and settlement</a> <a href="/topics/custody-clearing-and-market-access/">Custody, clearing and market access</a> <a href="/topics/fund-flows-and-etf-creation-mechanics/">Fund flows and ETF creation mechanics</a> </nav><p>Crypto Capital Monitor is an independent publication, is not affiliated with or endorsed by any protocol, exchange or project it covers, and provides no financial advice.</p><p>© 2026 Crypto Capital Monitor</p></footer>
+</body>
+</html>
