@@ -1,10 +1,8 @@
-# Crypto Capital Monitor
+# Coin Media
 
-> Independent crypto news and explainers for funds and trading desks.
-
-Coverage: Capital flows, derivatives positioning, liquidity, collateral and settlement.
-Editorial approach: Explain the transaction, trace the capital and identify the cost.
+> Coin Media is an independent crypto newsroom that explains each story by its mechanism: how protocols, markets and rules work, step by step, in plain terms.
 
 ## Key pages
-- [Homepage](https://aboutdefi.github.io/): Latest coverage and analysis.
-- [About](https://aboutdefi.github.io/about/): Publication mission and editorial policy.
+- [Homepage](https://aboutdefi.github.io/): latest reporting and analysis.
+- [About](https://aboutdefi.github.io/about/): editorial scope, independence, sourcing and corrections.
+- [Archive](https://aboutdefi.github.io/archive/): everything published.
