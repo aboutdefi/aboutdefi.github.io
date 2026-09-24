@@ -1,6 +1,6 @@
-# Hashline
+# Blocktape
 
-> Hashline reports crypto news: exchange and market moves, protocol upgrades, regulation, security incidents and funding rounds across the industry.
+> Blocktape reports crypto news: exchange and market moves, protocol upgrades, token launches, security incidents, regulation and enforcement across chains.
 
 ## Key pages
 - [Homepage](https://aboutdefi.github.io/): latest reporting and analysis.
