@@ -1,6 +1,6 @@
-# Coin Media
+# Hashline
 
-> Coin Media is an independent crypto newsroom that explains each story by its mechanism: how protocols, markets and rules work, step by step, in plain terms.
+> Hashline reports crypto news: exchange and market moves, protocol upgrades, regulation, security incidents and funding rounds across the industry.
 
 ## Key pages
 - [Homepage](https://aboutdefi.github.io/): latest reporting and analysis.
