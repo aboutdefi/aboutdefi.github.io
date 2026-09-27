@@ -1,7 +1,7 @@
 :root{
   --bg:#f3f4f7; --surface:#ffffff; --elevated:#e9ecf2;
   --text:#141a26; --muted:#535d70; --border:#d6dbe4;
-  --accent:#5b2bc4; --accent-ink:#ffffff;
+  --accent:#5b2bc4; --accent-ink:#ffffff; --accent-text:#5b2bc4;
   --font-display:"Saira Condensed", system-ui, sans-serif;
   --font-body:"IBM Plex Sans", system-ui, sans-serif;
   --font-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
@@ -35,7 +35,7 @@ p{margin:0 0 1.1em}
 .s4d974d2 > *{max-width:68ch}
 .s4d974d2 h2{font-size:1.55rem; margin-top:1.9em}
 .s4d974d2 h3{font-size:1.22rem; margin-top:1.5em}
-.s4d974d2 a{color:var(--accent); text-decoration:underline; text-underline-offset:2.5px; text-decoration-thickness:1px}
+.s4d974d2 a{color:var(--accent-text, var(--accent)); text-decoration:underline; text-underline-offset:2.5px; text-decoration-thickness:1px}
 .s4d974d2 a:hover{text-decoration-thickness:2px}
 .s4d974d2 ul,.s4d974d2 ol{padding-left:1.3em; margin:0 0 1.2em}
 .s4d974d2 li{margin:.35em 0}
