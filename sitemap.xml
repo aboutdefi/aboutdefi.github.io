@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://aboutdefi.github.io/</loc><lastmod>2026-09-29</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://aboutdefi.github.io/why-a-solana-swap-stays-pending-or-fails/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://aboutdefi.github.io/crypto-treasuries-match-cross-chain-transfers-to-usable-balances/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://aboutdefi.github.io/bridge-quotes-show-a-routes-terms-not-a-guaranteed-arrival/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://aboutdefi.github.io/how-dex-integrators-should-read-liquidity-lock-periods/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
