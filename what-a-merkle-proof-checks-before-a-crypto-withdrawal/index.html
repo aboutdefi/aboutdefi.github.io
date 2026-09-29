@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Merkle Proofs Before You Withdraw Crypto | Blocktape</title>
+<meta name="description" content="A Merkle proof confirms that a withdrawal record is included in a committed batch, but it cannot finalize the batch or replace the bridge’s claim and fee steps.">
+<link rel="canonical" href="https://aboutdefi.github.io/what-a-merkle-proof-checks-before-a-crypto-withdrawal/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f3f4f7">
+<meta name="author" content="The Blocktape Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Blocktape">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="What a Merkle Proof Checks Before a Crypto Withdrawal">
+<meta property="og:description" content="A Merkle proof confirms that a withdrawal record is included in a committed batch, but it cannot finalize the batch or replace the bridge’s claim and fee steps.">
+<meta property="og:url" content="https://aboutdefi.github.io/what-a-merkle-proof-checks-before-a-crypto-withdrawal/">
+<meta property="og:image" content="https://aboutdefi.github.io/assets/covers/what-a-merkle-proof-checks-before-a-crypto-withdrawal-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="What a Merkle Proof Checks Before a Crypto Withdrawal"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What a Merkle Proof Checks Before a Crypto Withdrawal">
+<meta name="twitter:description" content="A Merkle proof confirms that a withdrawal record is included in a committed batch, but it cannot finalize the batch or replace the bridge’s claim and fee steps.">
+<meta property="article:published_time" content="2026-09-29T20:11:39+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5cca27938f.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blocktape" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://aboutdefi.github.io/what-a-merkle-proof-checks-before-a-crypto-withdrawal/#article",
+      "headline": "What a Merkle Proof Checks Before a Crypto Withdrawal",
+      "isAccessibleForFree": true,
+      "description": "A Merkle proof confirms that a withdrawal record is included in a committed batch, but it cannot finalize the batch or replace the bridge’s claim and fee steps.",
+      "datePublished": "2026-09-29T20:11:39+00:00",
+      "dateModified": "2026-09-29T20:11:39+00:00",
+      "url": "https://aboutdefi.github.io/what-a-merkle-proof-checks-before-a-crypto-withdrawal/",
+      "mainEntityOfPage": {
+        "@id": "https://aboutdefi.github.io/what-a-merkle-proof-checks-before-a-crypto-withdrawal/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "wordCount": 578,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/covers/what-a-merkle-proof-checks-before-a-crypto-withdrawal.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aboutdefi.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "What a Merkle Proof Checks Before a Crypto Withdrawal",
+          "item": "https://aboutdefi.github.io/what-a-merkle-proof-checks-before-a-crypto-withdrawal/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://aboutdefi.github.io/#org",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aboutdefi.github.io/#website",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Blocktape reports crypto news: exchange and market moves, protocol upgrades, token launches, security incidents, regulation and enforcement across chains."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aboutdefi.github.io/what-a-merkle-proof-checks-before-a-crypto-withdrawal/#webpage",
+      "url": "https://aboutdefi.github.io/what-a-merkle-proof-checks-before-a-crypto-withdrawal/",
+      "name": "Merkle Proofs Before You Withdraw Crypto | Blocktape",
+      "isPartOf": {
+        "@id": "https://aboutdefi.github.io/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1723f48" href="#main">Skip to main content</a>
+<header class="s7ad23b1">
+  <div class="s391985a s96dce8e">
+    <a class="se6ac7dd" href="/">Blocktape</a>
+    <p class="s0856806">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s391985a s769e092">
+  <div class="sa3952f2">
+    <header class="s4d4a408">
+      <h1 class="se0278f7">What a Merkle Proof Checks Before a Crypto Withdrawal</h1>
+<p class="sd06bb4e">A Merkle proof confirms that a withdrawal record is included in a committed batch, but it cannot finalize the batch or replace the bridge’s claim and fee steps.</p>      <p class="s9113865">
+        <span class="s12e7d28">The Blocktape Editors</span>
+        <span class="s27d9430"><time class="sf928d55" datetime="2026-09-29T20:11:39+00:00">Sep 29, 2026</time><span class="sd47928e">3 min read</span></span>
+        <span class="s2da8688">8ce1d7</span>
+      </p>
+    </header>
+    <figure class="s154f77a"><img fetchpriority="high" class="scecec1a" src="/assets/covers/what-a-merkle-proof-checks-before-a-crypto-withdrawal.jpg" alt="Cover artwork for What a Merkle Proof Checks Before a Crypto Withdrawal"></figure>
+    <div class="s4d974d2">
+      <p>A Merkle proof lets a bridge contract check that a withdrawal record belongs to a batch whose root the destination chain has accepted; it does not send funds by itself. The proof is a set of hashes that lets the contract rebuild the batch’s root from the record and its position in the tree.</p>
+
+<p>That distinction matters when a bridge shows a withdrawal as pending or asks you to claim funds. For a fuller walkthrough of the steps involved, see this <a href="https://telegra.ph/How-to-Withdraw-With-Mantle-Bridge-and-Return-to-Ethereum-09-29" rel="noopener">guide to withdrawing through Mantle Bridge and returning to Ethereum</a>.</p>
+
+<h2>What does a Merkle proof verify?</h2>
+
+<p>A Merkle proof verifies inclusion: it shows that specific data, such as a withdrawal message, was included in a batch represented by a particular root. Ethereum.org’s rollup documentation describes the process: the contract checks the message data against the root and verifies that the root is one the protocol recognizes.</p>
+
+<p>Each step combines the record’s hash with a neighboring hash, in the required order, to produce a parent hash. Repeating that process reaches the root. Changing the record, a sibling hash or the order produces a different root, so the proof will fail against the accepted one.</p>
+
+<p>The root is the trust anchor. A mathematically valid path to an arbitrary root proves little; the destination contract must also recognize that root as valid. Rollup designs differ in how roots become accepted, including through validity proofs or a challenge period, so the same proof mechanics do not imply the same withdrawal timing.</p>
+
+<h2>Why might a bridge ask you to claim?</h2>
+
+<p>A claim is a separate transaction that tells the destination contract to release a withdrawal after the protocol’s conditions are met. The bridge may generate or fetch the Merkle proof for you, then submit it as part of that claim; in other systems, a user or relayer supplies the proof.</p>
+
+<p>The proof answers whether the withdrawal record is in the committed batch. It does not establish that the batch is final, that the bridge’s waiting conditions have elapsed, or that you have paid the destination network’s transaction fee. Those checks depend on the bridge protocol and contract.</p>
+
+<p>Ethereum.org’s explanation of optimistic rollups describes a challenge period before a withdrawal can be finalized. Other rollups use validity proofs to verify state updates. Check the bridge’s status for the specific withdrawal rather than assuming that seeing a proof or a source-chain transaction means the funds are ready.</p>
+
+<h2>What should you check before withdrawing?</h2>
+
+<p>Before signing, confirm that the bridge shows the intended asset, amount and destination address, and that the source transaction matches the withdrawal you expect. After the bridge marks the withdrawal ready, check the claim network and ensure the wallet has its native token available for fees.</p>
+
+<ul>
+<li>Match the withdrawal status to the source transaction in your wallet or the relevant block explorer.</li>
+<li>Check that the destination address and asset are correct before submitting a claim.</li>
+<li>Wait for the bridge to confirm that its proof and settlement requirements are complete.</li>
+<li>Keep the source transaction details so you can return to the same pending withdrawal if you close the page.</li>
+</ul>
+
+<p>A rejected proof usually points to a mismatch, an unaccepted root or a withdrawal that is not yet claimable; it is not a reason to repeat the withdrawal blindly. Follow the bridge’s status and claim flow, and check its support instructions if the same request remains stuck. The next step is to submit the claim once the bridge marks that withdrawal ready.</p>
+    </div>
+    <section class="s608c366">
+      <h2 class="sfd47c21">Related stories</h2>
+      <ul class="sa90e6d4">
+        <li><a href="/bridge-transfers-need-gas-on-both-sides-of-the-transaction/">Bridge transfers need gas on both sides of the transaction</a></li>
+        <li><a href="/manta-pacific-withdrawals-still-depend-on-ethereum-finality/">Manta Pacific Withdrawals Still Depend on Ethereum Finality</a></li>
+        <li><a href="/cross-chain-deposit-channels-can-preserve-access-after-vault-changes/">Cross-chain deposit channels can preserve access after vault changes</a></li>
+        <li><a href="/treasury-should-reconcile-chainflip-swaps-from-deposit-to-payout/">Treasury should reconcile Chainflip swaps from deposit to payout</a></li>
+      </ul>
+    </section>
+  </div>
+</article>
+</main>
+
+<footer class="s68d4aa4">
+  <div class="s391985a sb73b682">
+    <p class="sfe2a340">Blocktape</p>
+    <nav class="s68d87bb" aria-label="Site">
+      <ul>
+        <li><a href="/">Front page</a></li>
+        <li><a href="/archive/">All posts</a></li>
+        <li><a href="/about/">Masthead</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+      </ul>
+    </nav>
+    <p class="s2c909db">Independent publication. Not financial advice.</p>
+    <p class="s57d7fcf">© 2026 Blocktape</p>
+  </div>
+</footer>
+</body>
+</html>
