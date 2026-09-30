@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cross-chain treasury transfer: how to confirm completion</title>
+<meta name="description" content="Confirm a treasury transfer by checking source-chain finality, the bridge message and destination execution, then reconcile the asset and amount in the receiving account.">
+<link rel="canonical" href="https://aboutdefi.github.io/treasury-teams-need-two-transactions-to-confirm-a-cross-chain-transfer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f3f4f7">
+<meta name="author" content="The Blocktape Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Blocktape">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Treasury teams need two transactions to confirm a cross-chain transfer">
+<meta property="og:description" content="Confirm a treasury transfer by checking source-chain finality, the bridge message and destination execution, then reconcile the asset and amount in the receiving account.">
+<meta property="og:url" content="https://aboutdefi.github.io/treasury-teams-need-two-transactions-to-confirm-a-cross-chain-transfer/">
+<meta property="og:image" content="https://aboutdefi.github.io/assets/covers/treasury-teams-need-two-transactions-to-confirm-a-cross-chain-transfer-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Treasury teams need two transactions to confirm a cross-chain transfer"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Treasury teams need two transactions to confirm a cross-chain transfer">
+<meta name="twitter:description" content="Confirm a treasury transfer by checking source-chain finality, the bridge message and destination execution, then reconcile the asset and amount in the receiving account.">
+<meta property="article:published_time" content="2026-09-30T12:38:20+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5cca27938f.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blocktape" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://aboutdefi.github.io/treasury-teams-need-two-transactions-to-confirm-a-cross-chain-transfer/#article",
+      "headline": "Treasury teams need two transactions to confirm a cross-chain transfer",
+      "isAccessibleForFree": true,
+      "description": "Confirm a treasury transfer by checking source-chain finality, the bridge message and destination execution, then reconcile the asset and amount in the receiving account.",
+      "datePublished": "2026-09-30T12:38:20+00:00",
+      "dateModified": "2026-09-30T12:38:20+00:00",
+      "url": "https://aboutdefi.github.io/treasury-teams-need-two-transactions-to-confirm-a-cross-chain-transfer/",
+      "mainEntityOfPage": {
+        "@id": "https://aboutdefi.github.io/treasury-teams-need-two-transactions-to-confirm-a-cross-chain-transfer/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "wordCount": 482,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/covers/treasury-teams-need-two-transactions-to-confirm-a-cross-chain-transfer.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aboutdefi.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Treasury teams need two transactions to confirm a cross-chain transfer",
+          "item": "https://aboutdefi.github.io/treasury-teams-need-two-transactions-to-confirm-a-cross-chain-transfer/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://aboutdefi.github.io/#org",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aboutdefi.github.io/#website",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Blocktape reports crypto news: exchange and market moves, protocol upgrades, token launches, security incidents, regulation and enforcement across chains."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aboutdefi.github.io/treasury-teams-need-two-transactions-to-confirm-a-cross-chain-transfer/#webpage",
+      "url": "https://aboutdefi.github.io/treasury-teams-need-two-transactions-to-confirm-a-cross-chain-transfer/",
+      "name": "Cross-chain treasury transfer: how to confirm completion",
+      "isPartOf": {
+        "@id": "https://aboutdefi.github.io/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1723f48" href="#main">Skip to main content</a>
+<header class="s7ad23b1">
+  <div class="s391985a s96dce8e">
+    <a class="se6ac7dd" href="/">Blocktape</a>
+    <p class="s0856806">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s391985a s769e092">
+  <div class="sa3952f2">
+    <header class="s4d4a408">
+      <h1 class="se0278f7">Treasury teams need two transactions to confirm a cross-chain transfer</h1>
+<p class="sd06bb4e">Confirm a treasury transfer by checking source-chain finality, the bridge message and destination execution, then reconcile the asset and amount in the receiving account.</p>      <p class="s9113865">
+        <span class="s12e7d28">The Blocktape Editors</span>
+        <span class="s27d9430"><time class="sf928d55" datetime="2026-09-30T12:38:20+00:00">Sep 30, 2026</time><span class="sd47928e">2 min read</span></span>
+        <span class="s2da8688">b225bd</span>
+      </p>
+    </header>
+    <figure class="s154f77a"><img fetchpriority="high" class="scecec1a" src="/assets/covers/treasury-teams-need-two-transactions-to-confirm-a-cross-chain-transfer.jpg" alt="Cover artwork for Treasury teams need two transactions to confirm a cross-chain transfer"></figure>
+    <div class="s4d974d2">
+      <p>A cross-chain treasury transfer is complete when the source transaction is final and the destination chain has executed the transfer into the intended account. A “submitted” or “in progress” status only confirms an earlier step, so treasury teams should verify both chains before reconciling the movement.</p>
+
+<h2>What should I check on the source chain?</h2>
+<p>Start with the transaction hash and confirm that the transaction succeeded on the correct source network. Check that the expected treasury wallet or contract sent the amount, and that the bridge or messaging contract emitted the transfer event.</p>
+<p>Then check the chain’s finality status. A transaction visible in a block can still be vulnerable to a reorganization before it is final; Wormhole’s documentation, for example, describes finality as a chain-specific threshold before Guardians attest to a message. The required wait depends on the chain and the bridge’s configured security model.</p>
+
+<h2>How do I track the bridge message?</h2>
+<p>Use the bridge’s tracker or message identifier to follow the transfer after the source transaction. Depending on the system, the message may need to be observed, attested or signed, then relayed to the destination; an attestation proves that a message was validated, but does not by itself prove that it was executed.</p>
+<p>Cross-chain systems can coordinate more than token movements: a fuller account of <a href="https://www.tumblr.com/atomicgladiatoraltar/829133317289967616/what-the-model-coordinates" rel="noopener">how omnichain messages coordinate activity across networks</a> explains that broader model. For a treasury transfer, use the bridge’s own message record to match the source transaction to its destination attempt.</p>
+
+<h2>What proves the destination transfer completed?</h2>
+<p>Find the destination transaction hash and check it on the destination chain’s explorer. The transaction must succeed, and its event logs or state changes must show the intended action: for example, tokens released from a contract, minted to the receiving address or credited to a treasury vault.</p>
+<p>Compare the destination network, recipient address, asset and received amount with the approved transfer. Account for bridge fees or a different token representation where applicable. If the bridge reports delivery but the destination transaction failed, the transfer is not complete; check the bridge’s documented retry or recovery process.</p>
+
+<h2>How should a treasury record the transfer?</h2>
+<p>Keep evidence from each stage so another reviewer can reproduce the check. A useful record includes:</p>
+<ul>
+<li>Source network, transaction hash, sender and finality status.</li>
+<li>Bridge message ID or attestation reference, if the bridge provides one.</li>
+<li>Destination network, transaction hash, execution status and recipient.</li>
+<li>Asset and amount sent, fees, and amount credited.</li>
+</ul>
+<p>Reconcile the destination credit against the treasury ledger only after the destination transaction succeeds and the credited balance matches the expected net amount. If a transfer remains pending, record it as in transit and investigate which stage has stalled rather than treating a source-chain debit as proof of receipt.</p>
+<p>The next step after verification is to retain both transaction hashes and the bridge record with the treasury’s transfer approval, then close the ledger entry against the destination balance.</p>
+    </div>
+    <section class="s608c366">
+      <h2 class="sfd47c21">Related stories</h2>
+      <ul class="sa90e6d4">
+        <li><a href="/a-chain-reorg-can-reverse-a-bridge-message-before-finality/">A chain reorg can reverse a bridge message before finality</a></li>
+        <li><a href="/five-checks-for-a-stuck-cross-chain-swap/">Five checks for a stuck cross-chain swap</a></li>
+        <li><a href="/cross-chain-usdc-reconciliation-matches-burns-to-mints/">Cross-chain USDC reconciliation matches burns to mints</a></li>
+        <li><a href="/a-view-only-wallet-can-confirm-xmr-deposits-not-bridge-payouts/">A view-only wallet can confirm XMR deposits, not bridge payouts</a></li>
+      </ul>
+    </section>
+  </div>
+</article>
+</main>
+
+<footer class="s68d4aa4">
+  <div class="s391985a sb73b682">
+    <p class="sfe2a340">Blocktape</p>
+    <nav class="s68d87bb" aria-label="Site">
+      <ul>
+        <li><a href="/">Front page</a></li>
+        <li><a href="/archive/">All posts</a></li>
+        <li><a href="/about/">Masthead</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+      </ul>
+    </nav>
+    <p class="s2c909db">Independent publication. Not financial advice.</p>
+    <p class="s57d7fcf">© 2026 Blocktape</p>
+  </div>
+</footer>
+</body>
+</html>
