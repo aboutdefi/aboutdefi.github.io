@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estimate an XMR Bridge Wait: XMR Timing Stages | Blocktape</title>
+<meta name="description" content="Estimate an XMR bridge wait by separating Monero block inclusion, the service’s confirmation threshold, swap processing and destination-chain settlement.">
+<link rel="canonical" href="https://aboutdefi.github.io/moneros-two-minute-blocks-set-the-starting-point-for-xmr-bridge-waits/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f3f4f7">
+<meta name="author" content="The Blocktape Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Blocktape">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Monero’s Two-Minute Blocks Set the Starting Point for XMR Bridge Waits">
+<meta property="og:description" content="Estimate an XMR bridge wait by separating Monero block inclusion, the service’s confirmation threshold, swap processing and destination-chain settlement.">
+<meta property="og:url" content="https://aboutdefi.github.io/moneros-two-minute-blocks-set-the-starting-point-for-xmr-bridge-waits/">
+<meta property="og:image" content="https://aboutdefi.github.io/assets/covers/moneros-two-minute-blocks-set-the-starting-point-for-xmr-bridge-waits-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Monero’s Two-Minute Blocks Set the Starting Point for XMR Bridge Waits"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Monero’s Two-Minute Blocks Set the Starting Point for XMR Bridge Waits">
+<meta name="twitter:description" content="Estimate an XMR bridge wait by separating Monero block inclusion, the service’s confirmation threshold, swap processing and destination-chain settlement.">
+<meta property="article:published_time" content="2026-09-30T00:58:12+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5cca27938f.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blocktape" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://aboutdefi.github.io/moneros-two-minute-blocks-set-the-starting-point-for-xmr-bridge-waits/#article",
+      "headline": "Monero’s Two-Minute Blocks Set the Starting Point for XMR Bridge Waits",
+      "isAccessibleForFree": true,
+      "description": "Estimate an XMR bridge wait by separating Monero block inclusion, the service’s confirmation threshold, swap processing and destination-chain settlement.",
+      "datePublished": "2026-09-30T00:58:12+00:00",
+      "dateModified": "2026-09-30T00:58:12+00:00",
+      "url": "https://aboutdefi.github.io/moneros-two-minute-blocks-set-the-starting-point-for-xmr-bridge-waits/",
+      "mainEntityOfPage": {
+        "@id": "https://aboutdefi.github.io/moneros-two-minute-blocks-set-the-starting-point-for-xmr-bridge-waits/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "wordCount": 516,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/covers/moneros-two-minute-blocks-set-the-starting-point-for-xmr-bridge-waits.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aboutdefi.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Monero’s Two-Minute Blocks Set the Starting Point for XMR Bridge Waits",
+          "item": "https://aboutdefi.github.io/moneros-two-minute-blocks-set-the-starting-point-for-xmr-bridge-waits/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://aboutdefi.github.io/#org",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aboutdefi.github.io/#website",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Blocktape reports crypto news: exchange and market moves, protocol upgrades, token launches, security incidents, regulation and enforcement across chains."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aboutdefi.github.io/moneros-two-minute-blocks-set-the-starting-point-for-xmr-bridge-waits/#webpage",
+      "url": "https://aboutdefi.github.io/moneros-two-minute-blocks-set-the-starting-point-for-xmr-bridge-waits/",
+      "name": "Estimate an XMR Bridge Wait: XMR Timing Stages | Blocktape",
+      "isPartOf": {
+        "@id": "https://aboutdefi.github.io/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1723f48" href="#main">Skip to main content</a>
+<header class="s7ad23b1">
+  <div class="s391985a s96dce8e">
+    <a class="se6ac7dd" href="/">Blocktape</a>
+    <p class="s0856806">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s391985a s769e092">
+  <div class="sa3952f2">
+    <header class="s4d4a408">
+      <h1 class="se0278f7">Monero’s Two-Minute Blocks Set the Starting Point for XMR Bridge Waits</h1>
+<p class="sd06bb4e">Estimate an XMR bridge wait by separating Monero block inclusion, the service’s confirmation threshold, swap processing and destination-chain settlement.</p>      <p class="s9113865">
+        <span class="s12e7d28">The Blocktape Editors</span>
+        <span class="s27d9430"><time class="sf928d55" datetime="2026-09-30T00:58:12+00:00">Sep 30, 2026</time><span class="sd47928e">2 min read</span></span>
+        <span class="s2da8688">10c4f7</span>
+      </p>
+    </header>
+    <figure class="s154f77a"><img fetchpriority="high" class="scecec1a" src="/assets/covers/moneros-two-minute-blocks-set-the-starting-point-for-xmr-bridge-waits.jpg" alt="Cover artwork for Monero’s Two-Minute Blocks Set the Starting Point for XMR Bridge Waits"></figure>
+    <div class="s4d974d2">
+      <p>Monero targets one new block every two minutes, so an XMR bridge estimate starts with deposit inclusion and adds the service’s confirmation and payout stages. The two-minute figure is an average, not a countdown: a transaction can take longer to enter a block, and the receiving service may wait for several more blocks before acting.</p>
+
+<h2>How do you estimate an XMR bridge wait?</h2>
+<p>Add the time for the Monero transaction to be included in a block, the service’s required confirmation time, its processing time and the destination network’s confirmation time. These stages may be displayed separately, or combined into one status such as “processing.”</p>
+<p>Monero’s official documentation describes its block interval as two minutes on average. If a service requires N confirmations, allow roughly two minutes per confirmation as a planning estimate, then add time for the initial inclusion and any service processing; check how that service counts the block containing the deposit. For background on route trade-offs, <a href="https://dailynewscrypto.github.io/zerofi-bridge-or-swap-choosing-a-route-for-xmr/" rel="noopener">zerofi’s guide to comparing an XMR bridge with a swap</a> covers the choice in more detail. The route type alone does not tell you how long a particular provider will take.</p>
+
+<h2>Which stages make the wait longer?</h2>
+<p>The clock can pause at different points, and each status calls for a different check. A pending Monero deposit is still waiting for network inclusion; a confirmed deposit may be waiting for the service’s threshold or its payout step.</p>
+<ul>
+<li><strong>Monero inclusion:</strong> Check whether the wallet shows the transaction as pending or included in a block. A pending transaction has not yet started accumulating block confirmations.</li>
+<li><strong>Service threshold:</strong> Look for the required confirmation count in the order details. Providers set their own rules, so there is no single XMR bridge threshold to use for every route.</li>
+<li><strong>Processing:</strong> After the deposit clears the threshold, the service may still need to execute the exchange or transfer. Its status page or order record is the best source for that step’s progress.</li>
+<li><strong>Destination settlement:</strong> The receiving network may need to include the payout and add confirmations before the destination wallet or platform credits it.</li>
+</ul>
+
+<h2>What should you check before choosing a route?</h2>
+<p>Compare the estimated total time and the steps behind it, rather than treating the fastest advertised figure as a guarantee. A route that waits for more confirmations can take longer while applying a stricter settlement threshold; a shorter estimate may reflect fewer waits or a faster processing policy.</p>
+<p>Before sending, confirm the deposit address, minimum amount, quoted rate and expiry window in the order details. Save the transaction ID and order reference, then compare the service’s required confirmations with the status shown by your wallet. Monero transactions are irreversible once confirmed, so a wrong address cannot be corrected by waiting.</p>
+<p>For a practical estimate, use the provider’s stated confirmation count and add roughly two minutes per Monero block, plus its stated processing and destination-chain waits. If the deposit is confirmed but the order has not advanced, check the provider’s status page or contact its support with the order reference; the next useful update is the point at which the service releases the destination payout.</p>
+    </div>
+    <section class="s608c366">
+      <h2 class="sfd47c21">Related stories</h2>
+      <ul class="sa90e6d4">
+        <li><a href="/bridged-tokens-can-keep-transfer-restrictions-across-chains/">Bridged tokens can keep transfer restrictions across chains</a></li>
+        <li><a href="/polygon-pos-withdrawal-proofs-have-no-fixed-gas-cost/">Polygon PoS withdrawal proofs have no fixed gas cost</a></li>
+        <li><a href="/transfer-tax-tokens-need-bridge-support-for-net-amounts/">Transfer-tax tokens need bridge support for net amounts</a></li>
+        <li><a href="/polygon-bridge-routes-what-regular-users-should-compare/">Polygon Bridge routes: what regular users should compare</a></li>
+      </ul>
+    </section>
+  </div>
+</article>
+</main>
+
+<footer class="s68d4aa4">
+  <div class="s391985a sb73b682">
+    <p class="sfe2a340">Blocktape</p>
+    <nav class="s68d87bb" aria-label="Site">
+      <ul>
+        <li><a href="/">Front page</a></li>
+        <li><a href="/archive/">All posts</a></li>
+        <li><a href="/about/">Masthead</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+      </ul>
+    </nav>
+    <p class="s2c909db">Independent publication. Not financial advice.</p>
+    <p class="s57d7fcf">© 2026 Blocktape</p>
+  </div>
+</footer>
+</body>
+</html>
