@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Partially Filled Cross-Chain Transfer: 4 Checks | Blocktape</title>
+<meta name="description" content="A partial transfer can mean a bridge is still processing or only part of the value arrived; check the source receipt, route, destination activity and final amount.">
+<link rel="canonical" href="https://aboutdefi.github.io/four-checks-for-a-partially-filled-cross-chain-transfer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f3f4f7">
+<meta name="author" content="The Blocktape Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Blocktape">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Four Checks for a Partially Filled Cross-Chain Transfer">
+<meta property="og:description" content="A partial transfer can mean a bridge is still processing or only part of the value arrived; check the source receipt, route, destination activity and final amount.">
+<meta property="og:url" content="https://aboutdefi.github.io/four-checks-for-a-partially-filled-cross-chain-transfer/">
+<meta property="og:image" content="https://aboutdefi.github.io/assets/covers/four-checks-for-a-partially-filled-cross-chain-transfer-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Four Checks for a Partially Filled Cross-Chain Transfer"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Four Checks for a Partially Filled Cross-Chain Transfer">
+<meta name="twitter:description" content="A partial transfer can mean a bridge is still processing or only part of the value arrived; check the source receipt, route, destination activity and final amount.">
+<meta property="article:published_time" content="2026-09-30T10:07:54+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5cca27938f.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blocktape" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://aboutdefi.github.io/four-checks-for-a-partially-filled-cross-chain-transfer/#article",
+      "headline": "Four Checks for a Partially Filled Cross-Chain Transfer",
+      "isAccessibleForFree": true,
+      "description": "A partial transfer can mean a bridge is still processing or only part of the value arrived; check the source receipt, route, destination activity and final amount.",
+      "datePublished": "2026-09-30T10:07:54+00:00",
+      "dateModified": "2026-09-30T10:07:54+00:00",
+      "url": "https://aboutdefi.github.io/four-checks-for-a-partially-filled-cross-chain-transfer/",
+      "mainEntityOfPage": {
+        "@id": "https://aboutdefi.github.io/four-checks-for-a-partially-filled-cross-chain-transfer/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "wordCount": 507,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/covers/four-checks-for-a-partially-filled-cross-chain-transfer.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aboutdefi.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Four Checks for a Partially Filled Cross-Chain Transfer",
+          "item": "https://aboutdefi.github.io/four-checks-for-a-partially-filled-cross-chain-transfer/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://aboutdefi.github.io/#org",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aboutdefi.github.io/#website",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Blocktape reports crypto news: exchange and market moves, protocol upgrades, token launches, security incidents, regulation and enforcement across chains."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aboutdefi.github.io/four-checks-for-a-partially-filled-cross-chain-transfer/#webpage",
+      "url": "https://aboutdefi.github.io/four-checks-for-a-partially-filled-cross-chain-transfer/",
+      "name": "Partially Filled Cross-Chain Transfer: 4 Checks | Blocktape",
+      "isPartOf": {
+        "@id": "https://aboutdefi.github.io/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1723f48" href="#main">Skip to main content</a>
+<header class="s7ad23b1">
+  <div class="s391985a s96dce8e">
+    <a class="se6ac7dd" href="/">Blocktape</a>
+    <p class="s0856806">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s391985a s769e092">
+  <div class="sa3952f2">
+    <header class="s4d4a408">
+      <h1 class="se0278f7">Four Checks for a Partially Filled Cross-Chain Transfer</h1>
+<p class="sd06bb4e">A partial transfer can mean a bridge is still processing or only part of the value arrived; check the source receipt, route, destination activity and final amount.</p>      <p class="s9113865">
+        <span class="s12e7d28">The Blocktape Editors</span>
+        <span class="s27d9430"><time class="sf928d55" datetime="2026-09-30T10:07:54+00:00">Sep 30, 2026</time><span class="sd47928e">2 min read</span></span>
+        <span class="s2da8688">cbb1c7</span>
+      </p>
+    </header>
+    <figure class="s154f77a"><img fetchpriority="high" class="scecec1a" src="/assets/covers/four-checks-for-a-partially-filled-cross-chain-transfer.jpg" alt="Cover artwork for Four Checks for a Partially Filled Cross-Chain Transfer"></figure>
+    <div class="s4d974d2">
+      <p>A partially filled cross-chain transfer needs four checks: confirm the source transaction, verify the route, inspect destination activity and compare the amount received. A bridge moves value through steps on separate blockchains, so a confirmed send does not by itself prove the destination transfer is complete. Some bridges support partial fills; Across’s V3 documentation says its deposits are filled completely or not at all.</p>
+
+<h2>Did the source transaction confirm?</h2>
+
+<p>Start with the source-chain transaction hash in a block explorer for the network you sent from. Check that the transaction succeeded and that the token left the sending address; a pending or reverted transaction has not completed the first leg.</p>
+
+<p>Keep the hash, source network, destination network, token and approximate send time together. Bridge status tools may need the source transaction hash or a deposit identifier to find the transfer. If the hash shows success but the bridge interface has not updated, check the explorer before submitting anything again.</p>
+
+<h2>Does the route match the transfer?</h2>
+
+<p>Compare the source and destination networks, token and receiving address with the original transfer details. A token can have different contract addresses on different chains, and a wallet may hide a destination token until it is added or the destination network is selected.</p>
+
+<p>Fees and token conversion can also change the destination amount. For a closer look at how network and bridge costs affect a route, see this <a href="https://dailynewscrypto.github.io/manta-bridge-fees-what-deposits-and-withdrawals-cost/" rel="noopener">manta bridge</a> explainer. Use the transfer’s own quote and status for its figures; a fee example from another route cannot establish what this transfer should deliver.</p>
+
+<h2>Has the destination leg actually completed?</h2>
+
+<p>Look for a destination transaction hash or a final status from the bridge’s tracker, then open that hash in the destination chain’s explorer. 0x’s cross-chain status documentation distinguishes a bridge in progress from a completed fill, and says a retry transaction hash alone does not confirm delivery.</p>
+
+<p>If the tracker reports a pending state, the transfer may still be processing after the source transaction has confirmed. Wait for the bridge’s stated deadline or status guidance, and use the bridge’s support channel if that window passes without a terminal status. Do not treat a wallet balance display or a source-side success message as proof of destination settlement.</p>
+
+<h2>Does the amount received match the expected amount?</h2>
+
+<p>Compare the destination balance change with the transfer’s quoted output, accounting for the displayed fee and any swap. 0x documents that the settled amount can differ from the quote because of slippage, so the destination transaction and actual balance are the evidence of what arrived.</p>
+
+<ul>
+<li><strong>Source:</strong> transaction succeeded and the intended input left the sending address.</li>
+<li><strong>Route:</strong> destination chain, token and recipient match the transfer details.</li>
+<li><strong>Destination:</strong> tracker status is final and the destination transaction is confirmed.</li>
+<li><strong>Amount:</strong> received value is reconciled against output, fees and any swap.</li>
+</ul>
+
+<p>If all four checks pass, the transfer is complete even if the wallet display needs refreshing. If only the source leg is confirmed, keep the transaction details and follow the bridge tracker until it reports delivery, refund or another final state.</p>
+    </div>
+    <section class="s608c366">
+      <h2 class="sfd47c21">Related stories</h2>
+      <ul class="sa90e6d4">
+        <li><a href="/token-route-quotes-turn-on-fees-slippage-and-delivery/">Token Route Quotes Turn on Fees, Slippage and Delivery</a></li>
+        <li><a href="/how-teams-can-batch-token-payouts-on-bnb-smart-chain/">How teams can batch token payouts on BNB Smart Chain</a></li>
+        <li><a href="/xmr-swap-confirmations-depend-on-the-services-release-rules/">XMR swap confirmations depend on the service’s release rules</a></li>
+        <li><a href="/keep-trx-available-for-fees-during-a-tron-swap/">Keep TRX Available for Fees During a TRON Swap</a></li>
+      </ul>
+    </section>
+  </div>
+</article>
+</main>
+
+<footer class="s68d4aa4">
+  <div class="s391985a sb73b682">
+    <p class="sfe2a340">Blocktape</p>
+    <nav class="s68d87bb" aria-label="Site">
+      <ul>
+        <li><a href="/">Front page</a></li>
+        <li><a href="/archive/">All posts</a></li>
+        <li><a href="/about/">Masthead</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+      </ul>
+    </nav>
+    <p class="s2c909db">Independent publication. Not financial advice.</p>
+    <p class="s57d7fcf">© 2026 Blocktape</p>
+  </div>
+</footer>
+</body>
+</html>
