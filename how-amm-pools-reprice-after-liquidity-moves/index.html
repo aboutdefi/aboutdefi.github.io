@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pool Repricing After Liquidity Moves, Explained | Blocktape</title>
+<meta name="description" content="Pool repricing is a change in an automated market maker’s quoted rate after trades or liquidity shifts, while arbitrage can pull it toward outside markets.">
+<link rel="canonical" href="https://aboutdefi.github.io/how-amm-pools-reprice-after-liquidity-moves/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f3f4f7">
+<meta name="author" content="The Blocktape Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Blocktape">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How AMM Pools Reprice After Liquidity Moves">
+<meta property="og:description" content="Pool repricing is a change in an automated market maker’s quoted rate after trades or liquidity shifts, while arbitrage can pull it toward outside markets.">
+<meta property="og:url" content="https://aboutdefi.github.io/how-amm-pools-reprice-after-liquidity-moves/">
+<meta property="og:image" content="https://aboutdefi.github.io/assets/covers/how-amm-pools-reprice-after-liquidity-moves-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How AMM Pools Reprice After Liquidity Moves"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How AMM Pools Reprice After Liquidity Moves">
+<meta name="twitter:description" content="Pool repricing is a change in an automated market maker’s quoted rate after trades or liquidity shifts, while arbitrage can pull it toward outside markets.">
+<meta property="article:published_time" content="2026-09-30T13:33:33+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5cca27938f.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blocktape" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://aboutdefi.github.io/how-amm-pools-reprice-after-liquidity-moves/#article",
+      "headline": "How AMM Pools Reprice After Liquidity Moves",
+      "isAccessibleForFree": true,
+      "description": "Pool repricing is a change in an automated market maker’s quoted rate after trades or liquidity shifts, while arbitrage can pull it toward outside markets.",
+      "datePublished": "2026-09-30T13:33:33+00:00",
+      "dateModified": "2026-09-30T13:33:33+00:00",
+      "url": "https://aboutdefi.github.io/how-amm-pools-reprice-after-liquidity-moves/",
+      "mainEntityOfPage": {
+        "@id": "https://aboutdefi.github.io/how-amm-pools-reprice-after-liquidity-moves/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "wordCount": 611,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/covers/how-amm-pools-reprice-after-liquidity-moves.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aboutdefi.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How AMM Pools Reprice After Liquidity Moves",
+          "item": "https://aboutdefi.github.io/how-amm-pools-reprice-after-liquidity-moves/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://aboutdefi.github.io/#org",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aboutdefi.github.io/#website",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Blocktape reports crypto news: exchange and market moves, protocol upgrades, token launches, security incidents, regulation and enforcement across chains."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aboutdefi.github.io/how-amm-pools-reprice-after-liquidity-moves/#webpage",
+      "url": "https://aboutdefi.github.io/how-amm-pools-reprice-after-liquidity-moves/",
+      "name": "Pool Repricing After Liquidity Moves, Explained | Blocktape",
+      "isPartOf": {
+        "@id": "https://aboutdefi.github.io/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1723f48" href="#main">Skip to main content</a>
+<header class="s7ad23b1">
+  <div class="s391985a s96dce8e">
+    <a class="se6ac7dd" href="/">Blocktape</a>
+    <p class="s0856806">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s391985a s769e092">
+  <div class="sa3952f2">
+    <header class="s4d4a408">
+      <h1 class="se0278f7">How AMM Pools Reprice After Liquidity Moves</h1>
+<p class="sd06bb4e">Pool repricing is a change in an automated market maker’s quoted rate after trades or liquidity shifts, while arbitrage can pull it toward outside markets.</p>      <p class="s9113865">
+        <span class="s12e7d28">The Blocktape Editors</span>
+        <span class="s27d9430"><time class="sf928d55" datetime="2026-09-30T13:33:33+00:00">Sep 30, 2026</time><span class="sd47928e">3 min read</span></span>
+        <span class="s2da8688">166671</span>
+      </p>
+    </header>
+    <figure class="s154f77a"><img fetchpriority="high" class="scecec1a" src="/assets/covers/how-amm-pools-reprice-after-liquidity-moves.jpg" alt="Cover artwork for How AMM Pools Reprice After Liquidity Moves"></figure>
+    <div class="s4d974d2">
+      <p>Pool repricing is the change in an automated market maker’s token price when swaps alter its reserves or liquidity providers add or remove funds. In a constant-product pool, the reserve ratio sets the marginal price, while the pool’s formula sets how much a trade moves that price.</p>
+
+<h2>What makes a pool’s price change?</h2>
+
+<p>Uniswap’s developer documentation describes the basic constant-product model as x × y = k, where x and y are the two token reserves. The spot price is approximately the ratio between those reserves; when a trader adds one token and removes the other, that ratio shifts.</p>
+
+<p>A large trade relative to available reserves moves the price further than a small trade. Uniswap calls the expected effect of trade size “price impact”; the final execution can also differ from the expected quote if prices move while a transaction is pending.</p>
+
+<p>Liquidity changes affect depth as well as price. Adding tokens in the pool’s current ratio increases the capital available for trades without intentionally changing the ratio; removing liquidity reduces depth, so a later trade of the same size can cause more price impact. An imbalanced deposit can shift the reserve ratio and expose the pool to arbitrage.</p>
+
+<h2>How does a pool catch up with the wider market?</h2>
+
+<p>Arbitrage traders compare a pool’s quote with prices available elsewhere and trade when the gap can cover fees and transaction costs. If the pool’s token is cheap relative to another venue, they can buy it from the pool; that trade changes its reserves and moves the pool price toward the outside quote.</p>
+
+<p>Uniswap’s v2 pool documentation says an initial price set away from the wider market creates an arbitrage opportunity. The same mechanism applies after market moves: the pool does not need an operator to edit a price, because trades against its reserves update the quote. For a closer look at how token charts, wallet tracking and swaps fit around a pool quote, see <a href="https://jack-eth-hx4d6bhj47qbb1higngvc.justblogged.com/poocoin-choose-bsc-chart-wallet-tracker-or-swap" rel="noopener">Poocoin</a>.</p>
+
+<p>Arbitrage is not a guarantee that every pool matches every market instantly. Fees, network costs, thin outside markets and delayed transactions can leave a gap in place, while a shallow pool may move sharply before the gap closes. A displayed pool price is therefore a formula-based quote at current reserves, not a promise that a trade of any size will execute at that rate.</p>
+
+<h2>What does repricing mean for liquidity providers?</h2>
+
+<p>When outside prices move, arbitrage trades change the pool’s token mix as they bring its quote closer to the market. A liquidity provider who withdraws afterward may hold different quantities of each token than they deposited; the value can differ from simply holding those tokens, before fees and any other incentives.</p>
+
+<p>In concentrated-liquidity pools, providers choose price ranges for their capital. Uniswap’s documentation explains that liquidity is active only within its chosen range; as price moves beyond it, that position stops supplying liquidity until the price returns or the provider adjusts the range. This can make capital more efficient near the chosen price, but it also makes range selection part of the provider’s exposure.</p>
+
+<ul>
+<li>Compare the pool’s reserve ratio or quoted price with prices on other venues.</li>
+<li>Check pool depth and estimate price impact for the trade size you have in mind.</li>
+<li>For a liquidity position, check whether its price range remains active and account for fees separately.</li>
+</ul>
+
+<h2>How can a trader assess a repriced pool?</h2>
+
+<p>Start with the pool’s current reserves, active liquidity and expected execution price, then compare that quote with other available markets. The next swap or liquidity change can move the quote again; after it does, arbitrageurs may trade against the difference, and the pool’s reserves will determine its updated price.</p>
+    </div>
+    <section class="s608c366">
+      <h2 class="sfd47c21">Related stories</h2>
+      <ul class="sa90e6d4">
+        <li><a href="/how-to-fund-polygon-tournament-entry-fees/">How to Fund Polygon Tournament Entry Fees</a></li>
+        <li><a href="/switch-to-the-claims-network-before-you-claim-tokens/">Switch to the Claim’s Network Before You Claim Tokens</a></li>
+        <li><a href="/crypto-grants-should-pay-for-verified-delivery/">Crypto grants should pay for verified delivery</a></li>
+        <li><a href="/treasury-teams-need-two-transactions-to-confirm-a-cross-chain-transfer/">Treasury teams need two transactions to confirm a cross-chain transfer</a></li>
+      </ul>
+    </section>
+  </div>
+</article>
+</main>
+
+<footer class="s68d4aa4">
+  <div class="s391985a sb73b682">
+    <p class="sfe2a340">Blocktape</p>
+    <nav class="s68d87bb" aria-label="Site">
+      <ul>
+        <li><a href="/">Front page</a></li>
+        <li><a href="/archive/">All posts</a></li>
+        <li><a href="/about/">Masthead</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+      </ul>
+    </nav>
+    <p class="s2c909db">Independent publication. Not financial advice.</p>
+    <p class="s57d7fcf">© 2026 Blocktape</p>
+  </div>
+</footer>
+</body>
+</html>
