@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monero view-only wallet checks for an XMR bridge | Blocktape</title>
+<meta name="description" content="A Monero view-only wallet can verify incoming XMR to an address, but it cannot prove a bridge minted wrapped tokens or reveal outgoing transfers on Sepolia.">
+<link rel="canonical" href="https://aboutdefi.github.io/a-view-only-wallet-can-confirm-xmr-deposits-not-bridge-payouts/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f3f4f7">
+<meta name="author" content="The Blocktape Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Blocktape">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="A view-only wallet can confirm XMR deposits, not bridge payouts">
+<meta property="og:description" content="A Monero view-only wallet can verify incoming XMR to an address, but it cannot prove a bridge minted wrapped tokens or reveal outgoing transfers on Sepolia.">
+<meta property="og:url" content="https://aboutdefi.github.io/a-view-only-wallet-can-confirm-xmr-deposits-not-bridge-payouts/">
+<meta property="og:image" content="https://aboutdefi.github.io/assets/covers/a-view-only-wallet-can-confirm-xmr-deposits-not-bridge-payouts-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A view-only wallet can confirm XMR deposits, not bridge payouts"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A view-only wallet can confirm XMR deposits, not bridge payouts">
+<meta name="twitter:description" content="A Monero view-only wallet can verify incoming XMR to an address, but it cannot prove a bridge minted wrapped tokens or reveal outgoing transfers on Sepolia.">
+<meta property="article:published_time" content="2026-09-30T12:01:04+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5cca27938f.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blocktape" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://aboutdefi.github.io/a-view-only-wallet-can-confirm-xmr-deposits-not-bridge-payouts/#article",
+      "headline": "A view-only wallet can confirm XMR deposits, not bridge payouts",
+      "isAccessibleForFree": true,
+      "description": "A Monero view-only wallet can verify incoming XMR to an address, but it cannot prove a bridge minted wrapped tokens or reveal outgoing transfers on Sepolia.",
+      "datePublished": "2026-09-30T12:01:04+00:00",
+      "dateModified": "2026-09-30T12:01:04+00:00",
+      "url": "https://aboutdefi.github.io/a-view-only-wallet-can-confirm-xmr-deposits-not-bridge-payouts/",
+      "mainEntityOfPage": {
+        "@id": "https://aboutdefi.github.io/a-view-only-wallet-can-confirm-xmr-deposits-not-bridge-payouts/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "wordCount": 532,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/covers/a-view-only-wallet-can-confirm-xmr-deposits-not-bridge-payouts.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aboutdefi.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "A view-only wallet can confirm XMR deposits, not bridge payouts",
+          "item": "https://aboutdefi.github.io/a-view-only-wallet-can-confirm-xmr-deposits-not-bridge-payouts/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://aboutdefi.github.io/#org",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aboutdefi.github.io/#website",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Blocktape reports crypto news: exchange and market moves, protocol upgrades, token launches, security incidents, regulation and enforcement across chains."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aboutdefi.github.io/a-view-only-wallet-can-confirm-xmr-deposits-not-bridge-payouts/#webpage",
+      "url": "https://aboutdefi.github.io/a-view-only-wallet-can-confirm-xmr-deposits-not-bridge-payouts/",
+      "name": "Monero view-only wallet checks for an XMR bridge | Blocktape",
+      "isPartOf": {
+        "@id": "https://aboutdefi.github.io/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1723f48" href="#main">Skip to main content</a>
+<header class="s7ad23b1">
+  <div class="s391985a s96dce8e">
+    <a class="se6ac7dd" href="/">Blocktape</a>
+    <p class="s0856806">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s391985a s769e092">
+  <div class="sa3952f2">
+    <header class="s4d4a408">
+      <h1 class="se0278f7">A view-only wallet can confirm XMR deposits, not bridge payouts</h1>
+<p class="sd06bb4e">A Monero view-only wallet can verify incoming XMR to an address, but it cannot prove a bridge minted wrapped tokens or reveal outgoing transfers on Sepolia.</p>      <p class="s9113865">
+        <span class="s12e7d28">The Blocktape Editors</span>
+        <span class="s27d9430"><time class="sf928d55" datetime="2026-09-30T12:01:04+00:00">Sep 30, 2026</time><span class="sd47928e">2 min read</span></span>
+        <span class="s2da8688">20e042</span>
+      </p>
+    </header>
+    <figure class="s154f77a"><img fetchpriority="high" class="scecec1a" src="/assets/covers/a-view-only-wallet-can-confirm-xmr-deposits-not-bridge-payouts.jpg" alt="Cover artwork for A view-only wallet can confirm XMR deposits, not bridge payouts"></figure>
+    <div class="s4d974d2">
+      <p>A Monero view-only wallet can confirm incoming XMR to a watched address, but it cannot show that a bridge issued wrapped Monero on Sepolia. It can help verify one side of a transfer; the token side needs a separate check.</p>
+
+<p>Monero’s private blockchain does not let an observer look up an address and see its payments. A wallet with the address’s private view key can scan for incoming transactions and identify amounts sent to it. Monero documentation says the wallet cannot sign transactions without the spend key, and ordinarily cannot see outgoing transfers.</p>
+
+<p>For a broader account of the route, <a href="https://graph.org/ZeroFi-Turn-XMR-Into-Wrapped-Monero-on-Sepolia-09-30" rel="noopener">zerofi</a> describes turning XMR into a wrapped token on Sepolia. The distinction to keep in mind is that a Monero view-only wallet tracks activity visible to that wallet; it does not observe what a bridge does afterward.</p>
+
+<h2>What can a Monero view-only wallet verify?</h2>
+
+<p>A view-only wallet can verify that an incoming XMR transfer reached the watched Monero address. That makes it useful for checking a deposit sent to a bridge-controlled address, if the bridge’s view key and address are available, or for monitoring incoming transfers to a wallet you control.</p>
+
+<p>It cannot independently establish that the deposit belongs to a particular user or bridge request. You need matching details, such as the address and amount supplied for that deposit, and should allow for the required Monero confirmations before treating it as settled. A wallet watching your own address also will not reliably show an XMR payment you sent out: Monero says outgoing activity requires key images to update the view-only wallet’s balance.</p>
+
+<h2>What does it leave unverified?</h2>
+
+<p>A confirmed Monero deposit does not prove that the bridge processed it, that wrapped tokens were minted, or that the destination address received them. Those are separate steps. Check the Sepolia transaction and the relevant token transfer or balance using the destination address and token contract shown by the bridge.</p>
+
+<p>ZeroFi’s displayed interface lists a 0.01 XMR minimum, ten source-chain confirmations and ten sweep confirmations. It also identifies Sepolia by chain ID 11155111 and displays a zXMR token contract. These interface details describe the configured route; they do not make an incoming Monero payment proof of a completed Sepolia payout.</p>
+
+<ul>
+<li><strong>Monero deposit:</strong> check the watched address, amount and confirmation state.</li>
+<li><strong>Bridge processing:</strong> compare the deposit with the bridge’s own status or transaction record.</li>
+<li><strong>Sepolia payout:</strong> verify the destination address, token contract and token transfer on Sepolia.</li>
+<li><strong>Final balance:</strong> confirm the wrapped token appears at the intended destination address.</li>
+</ul>
+
+<h2>How should a user use the check?</h2>
+
+<p>Use a view-only wallet as evidence of incoming XMR, not as a receipt for the whole bridge operation. For a transfer you initiated from your own Monero wallet, check its transaction history and the bridge’s deposit instructions too; a view-only wallet may not show that outgoing payment unless it has the needed key images.</p>
+
+<p>Sharing a private view key can expose incoming activity associated with that wallet, even though it does not let the recipient spend XMR. Use a wallet and address intended for monitoring, and do not share the spend key or seed. The next check after Monero confirms the deposit is the matching wrapped-token transfer on Sepolia.</p>
+    </div>
+    <section class="s608c366">
+      <h2 class="sfd47c21">Related stories</h2>
+      <ul class="sa90e6d4">
+        <li><a href="/how-to-read-monero-to-evm-bridge-activity/">How to Read Monero-to-EVM Bridge Activity</a></li>
+        <li><a href="/zerofis-zxmr-route-currently-ends-on-sepolia/">ZeroFi’s zXMR route currently ends on Sepolia</a></li>
+        <li><a href="/how-to-convert-marketplace-crypto-sales-to-stablecoins/">How to Convert Marketplace Crypto Sales to Stablecoins</a></li>
+        <li><a href="/check-a-tron-tokens-swap-pool-before-trading/">Check a TRON Token’s Swap Pool Before Trading</a></li>
+      </ul>
+    </section>
+  </div>
+</article>
+</main>
+
+<footer class="s68d4aa4">
+  <div class="s391985a sb73b682">
+    <p class="sfe2a340">Blocktape</p>
+    <nav class="s68d87bb" aria-label="Site">
+      <ul>
+        <li><a href="/">Front page</a></li>
+        <li><a href="/archive/">All posts</a></li>
+        <li><a href="/about/">Masthead</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+      </ul>
+    </nav>
+    <p class="s2c909db">Independent publication. Not financial advice.</p>
+    <p class="s57d7fcf">© 2026 Blocktape</p>
+  </div>
+</footer>
+</body>
+</html>
