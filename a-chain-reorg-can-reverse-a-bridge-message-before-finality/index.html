@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bridge messages and chain reorgs: what can be undone</title>
+<meta name="description" content="A chain reorganization can erase a bridge message before it is final, while destination actions may persist; confirmation rules determine when a transfer is safe to trust.">
+<link rel="canonical" href="https://aboutdefi.github.io/a-chain-reorg-can-reverse-a-bridge-message-before-finality/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f3f4f7">
+<meta name="author" content="The Blocktape Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Blocktape">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="A chain reorg can reverse a bridge message before finality">
+<meta property="og:description" content="A chain reorganization can erase a bridge message before it is final, while destination actions may persist; confirmation rules determine when a transfer is safe to trust.">
+<meta property="og:url" content="https://aboutdefi.github.io/a-chain-reorg-can-reverse-a-bridge-message-before-finality/">
+<meta property="og:image" content="https://aboutdefi.github.io/assets/covers/a-chain-reorg-can-reverse-a-bridge-message-before-finality-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A chain reorg can reverse a bridge message before finality"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A chain reorg can reverse a bridge message before finality">
+<meta name="twitter:description" content="A chain reorganization can erase a bridge message before it is final, while destination actions may persist; confirmation rules determine when a transfer is safe to trust.">
+<meta property="article:published_time" content="2026-09-30T12:28:20+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5cca27938f.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blocktape" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://aboutdefi.github.io/a-chain-reorg-can-reverse-a-bridge-message-before-finality/#article",
+      "headline": "A chain reorg can reverse a bridge message before finality",
+      "isAccessibleForFree": true,
+      "description": "A chain reorganization can erase a bridge message before it is final, while destination actions may persist; confirmation rules determine when a transfer is safe to trust.",
+      "datePublished": "2026-09-30T12:28:20+00:00",
+      "dateModified": "2026-09-30T12:28:20+00:00",
+      "url": "https://aboutdefi.github.io/a-chain-reorg-can-reverse-a-bridge-message-before-finality/",
+      "mainEntityOfPage": {
+        "@id": "https://aboutdefi.github.io/a-chain-reorg-can-reverse-a-bridge-message-before-finality/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "wordCount": 605,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/covers/a-chain-reorg-can-reverse-a-bridge-message-before-finality.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aboutdefi.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "A chain reorg can reverse a bridge message before finality",
+          "item": "https://aboutdefi.github.io/a-chain-reorg-can-reverse-a-bridge-message-before-finality/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://aboutdefi.github.io/#org",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aboutdefi.github.io/#website",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Blocktape reports crypto news: exchange and market moves, protocol upgrades, token launches, security incidents, regulation and enforcement across chains."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aboutdefi.github.io/a-chain-reorg-can-reverse-a-bridge-message-before-finality/#webpage",
+      "url": "https://aboutdefi.github.io/a-chain-reorg-can-reverse-a-bridge-message-before-finality/",
+      "name": "Bridge messages and chain reorgs: what can be undone",
+      "isPartOf": {
+        "@id": "https://aboutdefi.github.io/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1723f48" href="#main">Skip to main content</a>
+<header class="s7ad23b1">
+  <div class="s391985a s96dce8e">
+    <a class="se6ac7dd" href="/">Blocktape</a>
+    <p class="s0856806">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s391985a s769e092">
+  <div class="sa3952f2">
+    <header class="s4d4a408">
+      <h1 class="se0278f7">A chain reorg can reverse a bridge message before finality</h1>
+<p class="sd06bb4e">A chain reorganization can erase a bridge message before it is final, while destination actions may persist; confirmation rules determine when a transfer is safe to trust.</p>      <p class="s9113865">
+        <span class="s12e7d28">The Blocktape Editors</span>
+        <span class="s27d9430"><time class="sf928d55" datetime="2026-09-30T12:28:20+00:00">Sep 30, 2026</time><span class="sd47928e">3 min read</span></span>
+        <span class="s2da8688">85391a</span>
+      </p>
+    </header>
+    <figure class="s154f77a"><img fetchpriority="high" class="scecec1a" src="/assets/covers/a-chain-reorg-can-reverse-a-bridge-message-before-finality.jpg" alt="Cover artwork for A chain reorg can reverse a bridge message before finality"></figure>
+    <div class="s4d974d2">
+      <p>A chain reorganization can remove a bridge transaction from the source chain before it is final, even if a bridge has already acted on its message. A reorg replaces part of a chain’s recent history with a competing version, changing which transactions count as canonical. The risk is that two chains can disagree about whether the event that authorized a transfer ever happened.</p>
+
+<p>Bridge systems carry instructions as well as assets: a source-chain contract may lock tokens or burn them, then emit a message for a destination-chain contract to release or mint value. For a practical guide to moving assets between networks, see <a href="https://dev.to/earlene_feil/fermi-swap-2026-how-to-move-and-exchange-tokens-across-chains-1h5d" rel="noopener">Fermi Swap token transfers across chains</a>. The key question for any bridge is when it treats the source event as settled.</p>
+
+<h2>What does a chain reorganization undo?</h2>
+
+<p>A reorganization undoes transactions in the replaced blocks and changes the state derived from them. If a source-chain deposit or message is removed, the user’s balance, contract storage, and emitted event are recalculated as though that transaction had not been included in the canonical history.</p>
+
+<p>That does not automatically reverse a destination-chain transaction. Once a separate chain has accepted and executed a relayed message, its state changes under that chain’s own consensus rules. Unless the destination transaction is itself reorganized or the bridge has a recovery mechanism, a token release or mint can remain even when its source event disappears.</p>
+
+<p>This creates a mismatch: the destination may have credited value without a lasting source deposit to back it. A bridge that waits for source finality reduces this risk, but the guarantee depends on the source chain’s consensus and the bridge’s verification design.</p>
+
+<h2>How do bridges decide a message is ready?</h2>
+
+<p>Bridges commonly wait for source-chain confirmations before accepting a message, but the required threshold and what it guarantees vary by chain and protocol. On Ethereum proof of stake, the Ethereum.org documentation distinguishes a recent “safe” head from a finalized block; finalized blocks are much harder to revert than blocks that are merely recent.</p>
+
+<p>Some systems use a configurable number of confirmations, while others rely on proofs or validators that attest to source-chain events. Those choices trade speed against reorganization risk. More waiting can make a shallow reorg less likely to affect a message, while a faster route depends more heavily on its verification and recovery rules.</p>
+
+<p>Arbitrum’s documentation describes parent-to-child messages as asynchronous: an L1 transaction can create a retryable ticket, and execution on the child chain happens separately. A successful submission therefore does not mean every later step has completed or that the message follows the same finality rules as a single-chain transaction.</p>
+
+<h2>What should users check before treating a transfer as final?</h2>
+
+<p>Check the message’s status on both chains and distinguish source confirmation from destination execution. A wallet’s “sent” notice or a destination balance update may describe one step, not the settlement of the full cross-chain operation.</p>
+
+<ul>
+  <li>Confirm the source transaction is included in the canonical chain and has reached the bridge’s stated threshold.</li>
+  <li>Check whether the bridge labels the message pending, verified, executed, or finalized; these states can mean different things.</li>
+  <li>Look for a retry or recovery path if destination execution fails after source submission.</li>
+  <li>For large transfers, use a route whose finality assumptions and failure handling are documented.</li>
+</ul>
+
+<p>A reorganization can remove the source event that a bridge message depends on, but it cannot reach across chains and erase a destination action by itself. The practical rule is to treat a transfer as settled only when the bridge’s message has cleared its source-chain requirements and its destination action has completed; the bridge’s status and recovery process determine what happens next.</p>
+    </div>
+    <section class="s608c366">
+      <h2 class="sfd47c21">Related stories</h2>
+      <ul class="sa90e6d4">
+        <li><a href="/five-checks-for-a-stuck-cross-chain-swap/">Five checks for a stuck cross-chain swap</a></li>
+        <li><a href="/cross-chain-usdc-reconciliation-matches-burns-to-mints/">Cross-chain USDC reconciliation matches burns to mints</a></li>
+        <li><a href="/a-view-only-wallet-can-confirm-xmr-deposits-not-bridge-payouts/">A view-only wallet can confirm XMR deposits, not bridge payouts</a></li>
+        <li><a href="/how-to-read-monero-to-evm-bridge-activity/">How to Read Monero-to-EVM Bridge Activity</a></li>
+      </ul>
+    </section>
+  </div>
+</article>
+</main>
+
+<footer class="s68d4aa4">
+  <div class="s391985a sb73b682">
+    <p class="sfe2a340">Blocktape</p>
+    <nav class="s68d87bb" aria-label="Site">
+      <ul>
+        <li><a href="/">Front page</a></li>
+        <li><a href="/archive/">All posts</a></li>
+        <li><a href="/about/">Masthead</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+      </ul>
+    </nav>
+    <p class="s2c909db">Independent publication. Not financial advice.</p>
+    <p class="s57d7fcf">© 2026 Blocktape</p>
+  </div>
+</footer>
+</body>
+</html>
