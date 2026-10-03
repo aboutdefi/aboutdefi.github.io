@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pay an Onchain Invoice With Monero: A Step-by-Step Guide</title>
+<meta name="description" content="An onchain invoice paid with Monero usually requires converting XMR to its named asset, then sending it on the specified network before expiry.">
+<link rel="canonical" href="https://aboutdefi.github.io/how-to-pay-an-onchain-invoice-with-monero/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f3f4f7">
+<meta name="author" content="The Blocktape Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Blocktape">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How to Pay an Onchain Invoice With Monero">
+<meta property="og:description" content="An onchain invoice paid with Monero usually requires converting XMR to its named asset, then sending it on the specified network before expiry.">
+<meta property="og:url" content="https://aboutdefi.github.io/how-to-pay-an-onchain-invoice-with-monero/">
+<meta property="og:image" content="https://aboutdefi.github.io/assets/covers/how-to-pay-an-onchain-invoice-with-monero-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to Pay an Onchain Invoice With Monero"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Pay an Onchain Invoice With Monero">
+<meta name="twitter:description" content="An onchain invoice paid with Monero usually requires converting XMR to its named asset, then sending it on the specified network before expiry.">
+<meta property="article:published_time" content="2026-10-03T18:37:22+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5cca27938f.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blocktape" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://aboutdefi.github.io/how-to-pay-an-onchain-invoice-with-monero/#article",
+      "headline": "How to Pay an Onchain Invoice With Monero",
+      "isAccessibleForFree": true,
+      "description": "An onchain invoice paid with Monero usually requires converting XMR to its named asset, then sending it on the specified network before expiry.",
+      "datePublished": "2026-10-03T18:37:22+00:00",
+      "dateModified": "2026-10-03T18:37:22+00:00",
+      "url": "https://aboutdefi.github.io/how-to-pay-an-onchain-invoice-with-monero/",
+      "mainEntityOfPage": {
+        "@id": "https://aboutdefi.github.io/how-to-pay-an-onchain-invoice-with-monero/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "wordCount": 441,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/covers/how-to-pay-an-onchain-invoice-with-monero.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aboutdefi.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How to Pay an Onchain Invoice With Monero",
+          "item": "https://aboutdefi.github.io/how-to-pay-an-onchain-invoice-with-monero/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://aboutdefi.github.io/#org",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aboutdefi.github.io/#website",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Blocktape reports crypto news: exchange and market moves, protocol upgrades, token launches, security incidents, regulation and enforcement across chains."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aboutdefi.github.io/how-to-pay-an-onchain-invoice-with-monero/#webpage",
+      "url": "https://aboutdefi.github.io/how-to-pay-an-onchain-invoice-with-monero/",
+      "name": "Pay an Onchain Invoice With Monero: A Step-by-Step Guide",
+      "isPartOf": {
+        "@id": "https://aboutdefi.github.io/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1723f48" href="#main">Skip to main content</a>
+<header class="s7ad23b1">
+  <div class="s391985a s96dce8e">
+    <a class="se6ac7dd" href="/">Blocktape</a>
+    <p class="s0856806">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s391985a s769e092">
+  <div class="sa3952f2">
+    <header class="s4d4a408">
+      <h1 class="se0278f7">How to Pay an Onchain Invoice With Monero</h1>
+<p class="sd06bb4e">An onchain invoice paid with Monero usually requires converting XMR to its named asset, then sending it on the specified network before expiry.</p>      <p class="s9113865">
+        <span class="s12e7d28">The Blocktape Editors</span>
+        <span class="s27d9430"><time class="sf928d55" datetime="2026-10-03T18:37:22+00:00">Oct 3, 2026</time><span class="sd47928e">2 min read</span></span>
+        <span class="s2da8688">b1ed5c</span>
+      </p>
+    </header>
+    <figure class="s154f77a"><img fetchpriority="high" class="scecec1a" src="/assets/covers/how-to-pay-an-onchain-invoice-with-monero.jpg" alt="Cover artwork for How to Pay an Onchain Invoice With Monero"></figure>
+    <div class="s4d974d2">
+      <p>To pay an onchain invoice with Monero, send XMR directly if the invoice accepts it; otherwise, convert XMR to the required asset and pay on the named network. An invoice’s asset, network, amount and expiry determine the route.</p>
+
+<h2>Can you pay an onchain invoice directly with Monero?</h2>
+
+<p>You can pay directly only when the invoice specifies Monero and provides a valid XMR address or payment request. In Monero GUI, you can paste a request beginning with <code>monero:</code>, check the amount and address, then confirm the transaction.</p>
+
+<p>If the invoice asks for another asset, such as a token on a different chain, an XMR transaction alone will not settle it. You need a conversion route that delivers the requested asset to the invoice’s destination address; see this guide to <a href="https://keyvault-8fz.pages.dev/choosing-an-xmr-bridge-means-choosing-a-route-and-its-risks/" rel="noopener">choosing an XMR bridge for your wallet</a> for how to assess that route.</p>
+
+<h2>What should you check before sending XMR?</h2>
+
+<p>Read the invoice for its exact asset, network, destination address, amount and deadline. A token name by itself is not enough: the same token can exist on different networks, and a transfer sent to the wrong network may not reach the invoice’s recipient.</p>
+
+<ul>
+<li>Confirm whether the invoice accepts XMR or requires a conversion.</li>
+<li>Match the requested token and network exactly, and copy the invoice’s destination address.</li>
+<li>Check the quoted destination amount, conversion fees, minimums and expiry time before authorizing a route.</li>
+<li>Keep enough XMR to cover the sending wallet’s transaction fee as well as the amount being converted.</li>
+</ul>
+
+<p>Monero’s official payment guide says the sender pays the XMR transaction fee, which varies with network congestion and transaction size rather than the amount sent. If a conversion is involved, the route may also charge fees or deliver a different amount when the quote expires or market prices change.</p>
+
+<h2>How do you complete and confirm the payment?</h2>
+
+<p>For a direct XMR invoice, paste its address or payment request into a synchronized Monero wallet, verify the amount and recipient, and confirm the send. The Monero wallet reports whether the transaction is pending or included in a block; its guide says confirmation takes about two minutes on average, but can take longer.</p>
+
+<p>For an invoice requiring another asset, follow the route’s instructions to send XMR and provide the invoice’s destination details. Check the received asset on the specified network and the invoice’s own status; an XMR transaction ID proves the Monero transfer, but does not by itself show that the separate invoice payment arrived.</p>
+
+<p>Monero transactions cannot be reversed after confirmation, so verify the address and amount before sending. Once the route reports delivery, check that the invoice has registered payment before treating it as settled.</p>
+    </div>
+    <section class="s608c366">
+      <h2 class="sfd47c21">Related stories</h2>
+      <ul class="sa90e6d4">
+        <li><a href="/how-to-fund-a-dao-proposal-with-monero/">How to fund a DAO proposal with Monero</a></li>
+        <li><a href="/how-to-fund-a-polygon-wallet-before-buying-collectibles/">How to Fund a Polygon Wallet Before Buying Collectibles</a></li>
+        <li><a href="/ethereum-foundation-launches-zkapi-for-private-ai-payments/">Ethereum Foundation launches zkAPI for private AI payments</a></li>
+        <li><a href="/chainflip-bitcoin-to-solana-swaps-usually-take-about-30-minutes/">Chainflip Bitcoin-to-Solana Swaps Usually Take About 30 Minutes</a></li>
+      </ul>
+    </section>
+  </div>
+</article>
+</main>
+
+<footer class="s68d4aa4">
+  <div class="s391985a sb73b682">
+    <p class="sfe2a340">Blocktape</p>
+    <nav class="s68d87bb" aria-label="Site">
+      <ul>
+        <li><a href="/">Front page</a></li>
+        <li><a href="/archive/">All posts</a></li>
+        <li><a href="/about/">Masthead</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+      </ul>
+    </nav>
+    <p class="s2c909db">Independent publication. Not financial advice.</p>
+    <p class="s57d7fcf">© 2026 Blocktape</p>
+  </div>
+</footer>
+</body>
+</html>
