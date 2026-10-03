@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Estimate Slippage Before a Token Swap | Blocktape</title>
+<meta name="description" content="Estimate swap slippage by comparing the live route quote with the spot price, then account for pool depth, fees and price movement before setting a minimum output.">
+<link rel="canonical" href="https://aboutdefi.github.io/estimate-slippage-before-a-token-swap/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f3f4f7">
+<meta name="author" content="The Blocktape Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Blocktape">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Estimate slippage before a token swap">
+<meta property="og:description" content="Estimate swap slippage by comparing the live route quote with the spot price, then account for pool depth, fees and price movement before setting a minimum output.">
+<meta property="og:url" content="https://aboutdefi.github.io/estimate-slippage-before-a-token-swap/">
+<meta property="og:image" content="https://aboutdefi.github.io/assets/covers/estimate-slippage-before-a-token-swap-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Estimate slippage before a token swap"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Estimate slippage before a token swap">
+<meta name="twitter:description" content="Estimate swap slippage by comparing the live route quote with the spot price, then account for pool depth, fees and price movement before setting a minimum output.">
+<meta property="article:published_time" content="2026-10-03T23:32:23+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5cca27938f.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blocktape" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://aboutdefi.github.io/estimate-slippage-before-a-token-swap/#article",
+      "headline": "Estimate slippage before a token swap",
+      "isAccessibleForFree": true,
+      "description": "Estimate swap slippage by comparing the live route quote with the spot price, then account for pool depth, fees and price movement before setting a minimum output.",
+      "datePublished": "2026-10-03T23:32:23+00:00",
+      "dateModified": "2026-10-03T23:32:23+00:00",
+      "url": "https://aboutdefi.github.io/estimate-slippage-before-a-token-swap/",
+      "mainEntityOfPage": {
+        "@id": "https://aboutdefi.github.io/estimate-slippage-before-a-token-swap/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "wordCount": 456,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/estimate-slippage-before-a-token-swap-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/estimate-slippage-before-a-token-swap-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/estimate-slippage-before-a-token-swap-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aboutdefi.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Estimate slippage before a token swap",
+          "item": "https://aboutdefi.github.io/estimate-slippage-before-a-token-swap/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://aboutdefi.github.io/#org",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aboutdefi.github.io/#website",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Blocktape reports crypto news: exchange and market moves, protocol upgrades, token launches, security incidents, regulation and enforcement across chains."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aboutdefi.github.io/estimate-slippage-before-a-token-swap/#webpage",
+      "url": "https://aboutdefi.github.io/estimate-slippage-before-a-token-swap/",
+      "name": "How to Estimate Slippage Before a Token Swap | Blocktape",
+      "isPartOf": {
+        "@id": "https://aboutdefi.github.io/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1723f48" href="#main">Skip to main content</a>
+<header class="s7ad23b1">
+  <div class="s391985a s96dce8e">
+    <a class="se6ac7dd" href="/">Blocktape</a>
+    <p class="s0856806">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s391985a s769e092">
+  <div class="sa3952f2">
+    <header class="s4d4a408">
+      <h1 class="se0278f7">Estimate slippage before a token swap</h1>
+<p class="sd06bb4e">Estimate swap slippage by comparing the live route quote with the spot price, then account for pool depth, fees and price movement before setting a minimum output.</p>      <p class="s9113865">
+        <span class="s12e7d28">The Blocktape Editors</span>
+        <span class="s27d9430"><time class="sf928d55" datetime="2026-10-03T23:32:23+00:00">Oct 3, 2026</time><span class="sd47928e">3 min read</span></span>
+        <span class="s2da8688">5d9e13</span>
+      </p>
+    </header>
+    <figure class="s154f77a"><img fetchpriority="high" class="scecec1a" src="/assets/covers/estimate-slippage-before-a-token-swap.jpg" alt="Cover artwork for Estimate slippage before a token swap"></figure>
+    <div class="s4d974d2">
+      <p>Estimate a token swap’s likely slippage by comparing its live output quote with the spot-price output, then check how pool depth and route choices could affect execution. The estimate has two parts: price impact caused by your trade and price movement while the transaction waits; the slippage limit only caps how much worse the final output may be.</p>
+
+<h2>What is the difference between price impact and slippage?</h2>
+<p>Price impact is the change in price caused by your trade, while slippage is the difference between the expected output and the amount received. Uniswap Labs makes this distinction in its explanation of the two terms. A quote can show price impact before submission, but it cannot predict every price change before the transaction is included.</p>
+<p>Pool depth and trade size shape price impact: a large order against a shallow pool moves its price more than the same order against a deeper pool. A route may split a swap across pools or pass through another token, changing both the quoted output and the fees. A fuller comparison of wallet integration and AMM routing appears in the <a href="https://blockchainnewshub.github.io/fermi-swap-vs-amm-routes-the-wallet-integration-trade-off/" rel="noopener">fermi swap</a> report.</p>
+
+<h2>How can you estimate slippage from a swap quote?</h2>
+<p>Start with the amount the swap preview says you will receive, then compare it with the output implied by the current spot price. The gap reflects costs such as pool fees and price impact, so treat it as the quote’s execution discount rather than a forecast of later movement.</p>
+<p>Then inspect the route and compare quotes for the same amount. A route through several pools can incur multiple pool fees, while a thin pool can have more price impact; the best displayed output can also change as market conditions shift. Refresh the quote just before submitting, especially if the token is moving quickly.</p>
+
+<ul>
+<li>Record the previewed output and the route it uses.</li>
+<li>Check the pool depth and fees along that route.</li>
+<li>Compare the preview with a spot-price reference, allowing for fees.</li>
+<li>Refresh the quote before submission and review the minimum output.</li>
+</ul>
+
+<h2>What slippage limit should you set?</h2>
+<p>Set the limit as a maximum acceptable reduction from the quoted output, not as your estimate of what slippage will be. For example, a 1% limit on a quote of 1,000 output tokens sets a minimum of 990; if the transaction would deliver less, it should fail rather than execute below that floor.</p>
+<p>Uniswap Labs notes that a limit set too low can cause a swap to fail, while a high limit can allow fewer tokens than expected. Use the smallest limit that leaves room for the market movement you are willing to accept, and check the preview’s minimum output before confirming. The quote and pool conditions can change while the transaction is pending.</p>
+    </div>
+    <section class="s608c366">
+      <h2 class="sfd47c21">Related stories</h2>
+      <ul class="sa90e6d4">
+        <li><a href="/icba-sues-occ-over-crypto-firms-national-trust-charters/">ICBA sues OCC over crypto firms’ national trust charters</a></li>
+        <li><a href="/how-to-pay-an-onchain-invoice-with-monero/">How to Pay an Onchain Invoice With Monero</a></li>
+        <li><a href="/how-to-fund-a-dao-proposal-with-monero/">How to fund a DAO proposal with Monero</a></li>
+        <li><a href="/how-to-fund-a-polygon-wallet-before-buying-collectibles/">How to Fund a Polygon Wallet Before Buying Collectibles</a></li>
+      </ul>
+    </section>
+  </div>
+</article>
+</main>
+
+<footer class="s68d4aa4">
+  <div class="s391985a sb73b682">
+    <p class="sfe2a340">Blocktape</p>
+    <nav class="s68d87bb" aria-label="Site">
+      <ul>
+        <li><a href="/">Front page</a></li>
+        <li><a href="/archive/">All posts</a></li>
+        <li><a href="/about/">Masthead</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+      </ul>
+    </nav>
+    <p class="s2c909db">Independent publication. Not financial advice.</p>
+    <p class="s57d7fcf">© 2026 Blocktape</p>
+  </div>
+</footer>
+</body>
+</html>
