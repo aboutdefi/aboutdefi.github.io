@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solana Liquidity: Check Token Mix Before Withdrawal</title>
+<meta name="description" content="Check a Solana pool’s token mints, estimated withdrawal amounts and unclaimed fees before signing; concentrated positions can return an uneven token mix.">
+<link rel="canonical" href="https://aboutdefi.github.io/check-token-mix-before-removing-solana-liquidity/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f3f4f7">
+<meta name="author" content="The Blocktape Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Blocktape">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Check Token Mix Before Removing Solana Liquidity">
+<meta property="og:description" content="Check a Solana pool’s token mints, estimated withdrawal amounts and unclaimed fees before signing; concentrated positions can return an uneven token mix.">
+<meta property="og:url" content="https://aboutdefi.github.io/check-token-mix-before-removing-solana-liquidity/">
+<meta property="og:image" content="https://aboutdefi.github.io/assets/covers/check-token-mix-before-removing-solana-liquidity-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Check Token Mix Before Removing Solana Liquidity"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Check Token Mix Before Removing Solana Liquidity">
+<meta name="twitter:description" content="Check a Solana pool’s token mints, estimated withdrawal amounts and unclaimed fees before signing; concentrated positions can return an uneven token mix.">
+<meta property="article:published_time" content="2026-10-04T01:29:14+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5cca27938f.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blocktape" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://aboutdefi.github.io/check-token-mix-before-removing-solana-liquidity/#article",
+      "headline": "Check Token Mix Before Removing Solana Liquidity",
+      "isAccessibleForFree": true,
+      "description": "Check a Solana pool’s token mints, estimated withdrawal amounts and unclaimed fees before signing; concentrated positions can return an uneven token mix.",
+      "datePublished": "2026-10-04T01:29:14+00:00",
+      "dateModified": "2026-10-04T01:29:14+00:00",
+      "url": "https://aboutdefi.github.io/check-token-mix-before-removing-solana-liquidity/",
+      "mainEntityOfPage": {
+        "@id": "https://aboutdefi.github.io/check-token-mix-before-removing-solana-liquidity/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "wordCount": 431,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/check-token-mix-before-removing-solana-liquidity-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/check-token-mix-before-removing-solana-liquidity-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/check-token-mix-before-removing-solana-liquidity-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aboutdefi.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Check Token Mix Before Removing Solana Liquidity",
+          "item": "https://aboutdefi.github.io/check-token-mix-before-removing-solana-liquidity/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://aboutdefi.github.io/#org",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aboutdefi.github.io/#website",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Blocktape reports crypto news: exchange and market moves, protocol upgrades, token launches, security incidents, regulation and enforcement across chains."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aboutdefi.github.io/check-token-mix-before-removing-solana-liquidity/#webpage",
+      "url": "https://aboutdefi.github.io/check-token-mix-before-removing-solana-liquidity/",
+      "name": "Solana Liquidity: Check Token Mix Before Withdrawal",
+      "isPartOf": {
+        "@id": "https://aboutdefi.github.io/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1723f48" href="#main">Skip to main content</a>
+<header class="s7ad23b1">
+  <div class="s391985a s96dce8e">
+    <a class="se6ac7dd" href="/">Blocktape</a>
+    <p class="s0856806">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s391985a s769e092">
+  <div class="sa3952f2">
+    <header class="s4d4a408">
+      <h1 class="se0278f7">Check Token Mix Before Removing Solana Liquidity</h1>
+<p class="sd06bb4e">Check a Solana pool’s token mints, estimated withdrawal amounts and unclaimed fees before signing; concentrated positions can return an uneven token mix.</p>      <p class="s9113865">
+        <span class="s12e7d28">The Blocktape Editors</span>
+        <span class="s27d9430"><time class="sf928d55" datetime="2026-10-04T01:29:14+00:00">Oct 4, 2026</time><span class="sd47928e">3 min read</span></span>
+        <span class="s2da8688">94b839</span>
+      </p>
+    </header>
+    <figure class="s154f77a"><img fetchpriority="high" class="scecec1a" src="/assets/covers/check-token-mix-before-removing-solana-liquidity.jpg" alt="Cover artwork for Check Token Mix Before Removing Solana Liquidity"></figure>
+    <div class="s4d974d2">
+      <p>Before removing Solana liquidity, compare the pool’s token mint addresses with the withdrawal estimate and confirm how much of each token will return to your wallet. The estimate can differ from your original deposit because trades change pool balances, and concentrated positions change composition as prices move.</p>
+
+<h2>Which token pair and position are you withdrawing?</h2>
+
+<p>Start with the pool address and the specific position, then verify both token mint addresses. Solana’s token documentation identifies each token through its mint; tickers and logos can be copied, so they are not enough to confirm an asset’s identity.</p>
+
+<p>Check that the position belongs to the pair you intended and that the withdrawal screen names the same two mints. For a short guide to the separate decision of trading or providing liquidity, read <a href="https://dailydefinews.github.io/byreal-how-to-choose-between-swaps-and-liquidity-pools/" rel="noopener">Byreal’s swap-or-pool choice</a>.</p>
+
+<h2>Why can the withdrawal return a different token mix?</h2>
+
+<p>The pool’s current price and trades determine the amounts available when liquidity is removed. In a concentrated-liquidity position, the selected price range also matters: as the price moves through that range, the position’s token amounts shift, and outside the range it can hold only one side of the pair.</p>
+
+<p>That means the original deposit ratio is not a reliable forecast of the withdrawal. Read the current estimate for each token, including units and decimals, and compare the displayed value with your intended outcome. A one-sided estimate may follow from the position’s price range rather than an error.</p>
+
+<h2>What should you check on the withdrawal screen?</h2>
+
+<p>Use the screen as a final check of assets, amounts and fees before signing. Review these items together:</p>
+
+<ul>
+<li>Pool and position identifiers match the one you intend to close or reduce.</li>
+<li>Both token mint addresses match the intended assets.</li>
+<li>Estimated amounts are shown for each token, with the chosen withdrawal percentage.</li>
+<li>Unclaimed fees or rewards are listed separately from the principal, if the interface supports collecting them.</li>
+</ul>
+
+<p>A withdrawal can be partial, so confirm whether the displayed amounts reflect the percentage you selected. If the app shows a minimum received amount or slippage setting, check that it suits the transaction; the final amount can change before execution as the pool state changes.</p>
+
+<h2>When is the token mix ready to accept?</h2>
+
+<p>Proceed when the mint addresses and estimated amounts match your plan, and the wallet’s transaction details agree with the pool interface. If the token identity, quantity or destination differs, stop and recheck the position before signing.</p>
+
+<p>After confirmation, verify the received balances in the wallet using the token accounts for those mints. Keep the transaction record; it shows what the on-chain withdrawal actually returned.</p>
+    </div>
+    <section class="s608c366">
+      <h2 class="sfd47c21">Related stories</h2>
+      <ul class="sa90e6d4">
+        <li><a href="/ethereum-foundation-launches-zkapi-on-mainnet/">Ethereum Foundation launches zkAPI on mainnet</a></li>
+        <li><a href="/estimate-slippage-before-a-token-swap/">Estimate slippage before a token swap</a></li>
+        <li><a href="/icba-sues-occ-over-crypto-firms-national-trust-charters/">ICBA sues OCC over crypto firms’ national trust charters</a></li>
+        <li><a href="/how-to-pay-an-onchain-invoice-with-monero/">How to Pay an Onchain Invoice With Monero</a></li>
+      </ul>
+    </section>
+  </div>
+</article>
+</main>
+
+<footer class="s68d4aa4">
+  <div class="s391985a sb73b682">
+    <p class="sfe2a340">Blocktape</p>
+    <nav class="s68d87bb" aria-label="Site">
+      <ul>
+        <li><a href="/">Front page</a></li>
+        <li><a href="/archive/">All posts</a></li>
+        <li><a href="/about/">Masthead</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+      </ul>
+    </nav>
+    <p class="s2c909db">Independent publication. Not financial advice.</p>
+    <p class="s57d7fcf">© 2026 Blocktape</p>
+  </div>
+</footer>
+</body>
+</html>
