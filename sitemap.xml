@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://aboutdefi.github.io/</loc><lastmod>2026-10-05</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://aboutdefi.github.io/</loc><lastmod>2026-10-06</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://aboutdefi.github.io/fairshake-names-32-house-candidates-for-midterm-support/</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://aboutdefi.github.io/near-intents-recovers-3-8m-after-48-hour-ultimatum/</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://aboutdefi.github.io/ethereum-foundation-puts-private-api-payment-system-zkapi-on-mainnet/</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://aboutdefi.github.io/polygon-withdrawals-trade-lower-cost-for-faster-delivery/</loc><lastmod>2026-10-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -103,19 +104,20 @@
 <url><loc>https://aboutdefi.github.io/poocoin-checks-move-faster-when-each-step-answers-one-question/</loc><lastmod>2026-09-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://aboutdefi.github.io/move-usdt-to-arbitrum-and-keep-eth-for-gas/</loc><lastmod>2026-09-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://aboutdefi.github.io/binance-takes-100-million-stake-in-circle-in-five-year-usdc-deal/</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://aboutdefi.github.io/archive/</loc><priority>0.3</priority></url>
-<url><loc>https://aboutdefi.github.io/about/</loc><priority>0.3</priority></url>
-<url><loc>https://aboutdefi.github.io/privacy/</loc><priority>0.3</priority></url>
-<url><loc>https://aboutdefi.github.io/page/2/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://aboutdefi.github.io/page/3/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://aboutdefi.github.io/page/4/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://aboutdefi.github.io/page/5/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://aboutdefi.github.io/page/6/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://aboutdefi.github.io/page/7/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://aboutdefi.github.io/page/8/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://aboutdefi.github.io/page/9/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://aboutdefi.github.io/page/10/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://aboutdefi.github.io/page/11/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://aboutdefi.github.io/archive/page/2/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://aboutdefi.github.io/archive/page/3/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://aboutdefi.github.io/archive/</loc><lastmod>2026-10-06</lastmod><priority>0.3</priority></url>
+<url><loc>https://aboutdefi.github.io/about/</loc><lastmod>2026-09-24</lastmod><priority>0.3</priority></url>
+<url><loc>https://aboutdefi.github.io/privacy/</loc><lastmod>2026-09-24</lastmod><priority>0.3</priority></url>
+<url><loc>https://aboutdefi.github.io/editorial-policy/</loc><lastmod>2026-09-24</lastmod><priority>0.3</priority></url>
+<url><loc>https://aboutdefi.github.io/page/2/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://aboutdefi.github.io/page/3/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://aboutdefi.github.io/page/4/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://aboutdefi.github.io/page/5/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://aboutdefi.github.io/page/6/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://aboutdefi.github.io/page/7/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://aboutdefi.github.io/page/8/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://aboutdefi.github.io/page/9/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://aboutdefi.github.io/page/10/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://aboutdefi.github.io/page/11/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://aboutdefi.github.io/archive/page/2/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://aboutdefi.github.io/archive/page/3/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
 </urlset>
