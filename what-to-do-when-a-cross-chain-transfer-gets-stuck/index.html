@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stuck Cross-Chain Transfer: How to Check and Recover</title>
+<meta name="description" content="A stuck bridge transfer may be pending on the source chain, awaiting a destination action, or eligible for a refund; check its status before retrying.">
+<link rel="canonical" href="https://aboutdefi.github.io/what-to-do-when-a-cross-chain-transfer-gets-stuck/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f3f4f7">
+<meta name="author" content="The Blocktape Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Blocktape">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="What to Do When a Cross-Chain Transfer Gets Stuck">
+<meta property="og:description" content="A stuck bridge transfer may be pending on the source chain, awaiting a destination action, or eligible for a refund; check its status before retrying.">
+<meta property="og:url" content="https://aboutdefi.github.io/what-to-do-when-a-cross-chain-transfer-gets-stuck/">
+<meta property="og:image" content="https://aboutdefi.github.io/assets/covers/what-to-do-when-a-cross-chain-transfer-gets-stuck-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="What to Do When a Cross-Chain Transfer Gets Stuck"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What to Do When a Cross-Chain Transfer Gets Stuck">
+<meta name="twitter:description" content="A stuck bridge transfer may be pending on the source chain, awaiting a destination action, or eligible for a refund; check its status before retrying.">
+<meta property="article:published_time" content="2026-10-16T06:16:18+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5cca27938f.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blocktape" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://aboutdefi.github.io/what-to-do-when-a-cross-chain-transfer-gets-stuck/#article",
+      "headline": "What to Do When a Cross-Chain Transfer Gets Stuck",
+      "isAccessibleForFree": true,
+      "description": "A stuck bridge transfer may be pending on the source chain, awaiting a destination action, or eligible for a refund; check its status before retrying.",
+      "datePublished": "2026-10-16T06:16:18+00:00",
+      "dateModified": "2026-10-16T06:16:18+00:00",
+      "url": "https://aboutdefi.github.io/what-to-do-when-a-cross-chain-transfer-gets-stuck/",
+      "mainEntityOfPage": {
+        "@id": "https://aboutdefi.github.io/what-to-do-when-a-cross-chain-transfer-gets-stuck/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "wordCount": 411,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/what-to-do-when-a-cross-chain-transfer-gets-stuck-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/what-to-do-when-a-cross-chain-transfer-gets-stuck-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/what-to-do-when-a-cross-chain-transfer-gets-stuck-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aboutdefi.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "What to Do When a Cross-Chain Transfer Gets Stuck",
+          "item": "https://aboutdefi.github.io/what-to-do-when-a-cross-chain-transfer-gets-stuck/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://aboutdefi.github.io/#org",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://aboutdefi.github.io/editorial-policy/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aboutdefi.github.io/#website",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Blocktape reports crypto news: exchange and market moves, protocol upgrades, token launches, security incidents, regulation and enforcement across chains."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aboutdefi.github.io/what-to-do-when-a-cross-chain-transfer-gets-stuck/#webpage",
+      "url": "https://aboutdefi.github.io/what-to-do-when-a-cross-chain-transfer-gets-stuck/",
+      "name": "Stuck Cross-Chain Transfer: How to Check and Recover",
+      "isPartOf": {
+        "@id": "https://aboutdefi.github.io/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1723f48" href="#main">Skip to main content</a>
+<header class="s7ad23b1">
+  <div class="s391985a s96dce8e">
+    <a class="se6ac7dd" href="/">Blocktape</a>
+    <p class="s0856806">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s391985a s769e092">
+  <div class="sa3952f2">
+    <header class="s4d4a408">
+      <h1 class="se0278f7">What to Do When a Cross-Chain Transfer Gets Stuck</h1>
+<p class="sd06bb4e">A stuck bridge transfer may be pending on the source chain, awaiting a destination action, or eligible for a refund; check its status before retrying.</p>      <p class="s9113865">
+        <span class="s12e7d28">The Blocktape Editors</span>
+        <span class="s27d9430"><time class="sf928d55" datetime="2026-10-16T06:16:18+00:00">Oct 16, 2026 · 06:16 UTC</time><span class="sd47928e">3 min read</span></span>
+        <span class="s2da8688">3777ff</span>
+      </p>
+    </header>
+    <figure class="s154f77a"><img width="1200" height="630" fetchpriority="high" class="scecec1a" src="/assets/covers/what-to-do-when-a-cross-chain-transfer-gets-stuck.jpg" alt="What to Do When a Cross-Chain Transfer Gets Stuck"></figure>
+    <div class="s4d974d2">
+      <p>If a cross-chain transfer gets stuck, check the source transaction and the bridge’s status before sending funds again. A bridge may lock or burn assets on one chain, then mint, release or swap assets on another; a confirmed source transaction does not by itself prove the destination step finished. Keep the transaction hash, source and destination networks, token and amount to hand.</p>
+
+<h2>How do I check where the transfer stopped?</h2>
+<p>Start with the source-chain explorer: it shows whether the transaction is pending, failed or confirmed. If it failed, the bridge call did not complete; if it confirmed, check the bridge’s own tracker or the destination-chain explorer for the next step. The destination token may have a different contract address from the source token, so verify the asset and recipient address rather than relying only on the wallet’s display.</p>
+<p>Bridge designs and supported routes change over time. For historical context on Bitcoin routes, see <a href="https://icryptos.mataroa.blog/blog/what-were-the-main-renbridge-routes-and-what-works-now/" rel="noopener">RenBridge routes and what still works</a>. The specific bridge’s status page is the right place to check an active transfer.</p>
+
+<h2>What should I do if the source transaction is pending?</h2>
+<p>A pending source transaction has not yet been recorded as complete by that chain. Check the wallet’s fee and nonce details; if the wallet supports it, speeding up or cancelling may be possible, but that action applies to the source transaction and does not recover a transfer already confirmed on-chain.</p>
+<ul>
+<li>Record the transaction hash and confirm the source network.</li>
+<li>Check the bridge tracker for pending, completed, expired or refunded status.</li>
+<li>If the source transaction confirmed, search the destination address and correct network for the expected token.</li>
+<li>Follow the bridge’s instructions if it requires a claim, finalization or refund.</li>
+</ul>
+
+<h2>When can I retry or request a refund?</h2>
+<p>Retry only after confirming the first source transaction failed or the bridge says the transfer was refunded. Across’s documentation, for example, says an unfilled deposit can become eligible for a refund after its fill deadline; that process depends on the bridge and transfer, so do not assume every pending transfer can be reclaimed the same way.</p>
+<p>If the tracker shows a confirmed source transaction but no destination delivery or refund, contact the bridge through its official support channel with the hash and status details. Never share a seed phrase or private key, and do not sign a new transaction sent by an unsolicited “support” account. The next step is to follow the bridge’s status or recovery instructions for that specific transfer.</p>
+    </div>
+    <section class="s608c366">
+      <h2 class="sfd47c21">Related stories</h2>
+      <ul class="sa90e6d4">
+        <li><a href="/how-to-size-recurring-cross-chain-treasury-transfers/">How to Size Recurring Cross-Chain Treasury Transfers</a></li>
+        <li><a href="/set-a-minimum-output-for-destination-swaps/">Set a Minimum Output for Destination Swaps</a></li>
+        <li><a href="/how-to-compare-two-routes-for-a-cross-chain-swap/">How to Compare Two Routes for a Cross-Chain Swap</a></li>
+        <li><a href="/swap-into-a-stablecoin-before-bridging-to-limit-price-exposure/">Swap Into a Stablecoin Before Bridging to Limit Price Exposure</a></li>
+      </ul>
+    </section>
+  </div>
+</article>
+</main>
+
+<footer class="s68d4aa4">
+  <div class="s391985a sb73b682">
+    <p class="sfe2a340">Blocktape</p>
+    <nav class="s68d87bb" aria-label="Site">
+      <ul>
+        <li><a href="/">Front page</a></li>
+        <li><a href="/archive/">All posts</a></li>
+        <li><a href="/about/">Masthead</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/editorial-policy/">Editorial policy</a></li>
+      </ul>
+    </nav>
+    <p class="s2c909db">Independent crypto coverage, for information only.</p>
+    <p class="s57d7fcf">© 2026 Blocktape</p>
+  </div>
+</footer>
+</body>
+</html>
