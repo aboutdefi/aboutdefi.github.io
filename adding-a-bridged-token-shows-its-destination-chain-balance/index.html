@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Happens When You Add a Bridged Token to a Wallet?</title>
+<meta name="description" content="Adding a bridged token makes its destination-chain balance visible, but does not move funds or prove redemption; check the network and contract before importing.">
+<link rel="canonical" href="https://aboutdefi.github.io/adding-a-bridged-token-shows-its-destination-chain-balance/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f3f4f7">
+<meta name="author" content="The Blocktape Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Blocktape">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Adding a Bridged Token Shows Its Destination-Chain Balance">
+<meta property="og:description" content="Adding a bridged token makes its destination-chain balance visible, but does not move funds or prove redemption; check the network and contract before importing.">
+<meta property="og:url" content="https://aboutdefi.github.io/adding-a-bridged-token-shows-its-destination-chain-balance/">
+<meta property="og:image" content="https://aboutdefi.github.io/assets/covers/adding-a-bridged-token-shows-its-destination-chain-balance-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Adding a Bridged Token Shows Its Destination-Chain Balance"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Adding a Bridged Token Shows Its Destination-Chain Balance">
+<meta name="twitter:description" content="Adding a bridged token makes its destination-chain balance visible, but does not move funds or prove redemption; check the network and contract before importing.">
+<meta property="article:published_time" content="2026-10-17T01:26:18+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5cca27938f.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blocktape" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://aboutdefi.github.io/adding-a-bridged-token-shows-its-destination-chain-balance/#article",
+      "headline": "Adding a Bridged Token Shows Its Destination-Chain Balance",
+      "isAccessibleForFree": true,
+      "description": "Adding a bridged token makes its destination-chain balance visible, but does not move funds or prove redemption; check the network and contract before importing.",
+      "datePublished": "2026-10-17T01:26:18+00:00",
+      "dateModified": "2026-10-17T01:26:18+00:00",
+      "url": "https://aboutdefi.github.io/adding-a-bridged-token-shows-its-destination-chain-balance/",
+      "mainEntityOfPage": {
+        "@id": "https://aboutdefi.github.io/adding-a-bridged-token-shows-its-destination-chain-balance/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "wordCount": 434,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/adding-a-bridged-token-shows-its-destination-chain-balance-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/adding-a-bridged-token-shows-its-destination-chain-balance-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/adding-a-bridged-token-shows-its-destination-chain-balance-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aboutdefi.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Adding a Bridged Token Shows Its Destination-Chain Balance",
+          "item": "https://aboutdefi.github.io/adding-a-bridged-token-shows-its-destination-chain-balance/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://aboutdefi.github.io/#org",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://aboutdefi.github.io/editorial-policy/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aboutdefi.github.io/#website",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Blocktape reports crypto news: exchange and market moves, protocol upgrades, token launches, security incidents, regulation and enforcement across chains."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aboutdefi.github.io/adding-a-bridged-token-shows-its-destination-chain-balance/#webpage",
+      "url": "https://aboutdefi.github.io/adding-a-bridged-token-shows-its-destination-chain-balance/",
+      "name": "What Happens When You Add a Bridged Token to a Wallet?",
+      "isPartOf": {
+        "@id": "https://aboutdefi.github.io/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1723f48" href="#main">Skip to main content</a>
+<header class="s7ad23b1">
+  <div class="s391985a s96dce8e">
+    <a class="se6ac7dd" href="/">Blocktape</a>
+    <p class="s0856806">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s391985a s769e092">
+  <div class="sa3952f2">
+    <header class="s4d4a408">
+      <h1 class="se0278f7">Adding a Bridged Token Shows Its Destination-Chain Balance</h1>
+<p class="sd06bb4e">Adding a bridged token makes its destination-chain balance visible, but does not move funds or prove redemption; check the network and contract before importing.</p>      <p class="s9113865">
+        <span class="s12e7d28">The Blocktape Editors</span>
+        <span class="s27d9430"><time class="sf928d55" datetime="2026-10-17T01:26:18+00:00">Oct 17, 2026 · 01:26 UTC</time><span class="sd47928e">3 min read</span></span>
+        <span class="s2da8688">56c563</span>
+      </p>
+    </header>
+    <figure class="s154f77a"><img width="1200" height="630" fetchpriority="high" class="scecec1a" src="/assets/covers/adding-a-bridged-token-shows-its-destination-chain-balance.jpg" alt="Adding a Bridged Token Shows Its Destination-Chain Balance"></figure>
+    <div class="s4d974d2">
+      <p>Adding a bridged token to a wallet usually makes a token contract’s balance visible on the destination network; it does not perform the bridge transfer. The token is a representation issued or released there under the bridge’s rules, while the original asset remains on—or is handled by—the source network.</p>
+
+<h2>What does adding a token to a wallet do?</h2>
+<p>Adding a token tells the wallet which contract to read so it can display the balance and, if supported, prepare transactions. MetaMask’s guidance, for example, says users can import a custom token by entering its contract address on the relevant network. The import changes the wallet display; only a transaction on the blockchain changes ownership or moves funds.</p>
+<p>A bridged token can have a different contract address and token name from the asset it represents. For the wider sequence of bridging and swapping, see <a href="https://isaiahtrxw635112.blogsumer.com/42208067/how-to-use-biswap-to-bridge-and-swap-crypto" rel="noopener">Biswap’s guide to bridging and swapping crypto</a>. The bridge transfer itself must complete before there is a destination-chain balance to display.</p>
+
+<h2>How does a bridge create the destination token?</h2>
+<p>Bridges use different designs, but a common model locks the original tokens on the source chain and mints a corresponding representation on the destination chain. Ethereum.org describes bridged assets as versions that exist on another network, not the original asset itself. Some systems instead rely on liquidity or other bridge-specific mechanisms, so the token’s redemption path depends on the bridge.</p>
+<p>That difference matters when sending the token back. In a lock-and-mint model, the bridge may burn the representation and release the original asset after verifying the transfer. A token with the same ticker or logo can follow a different bridge’s rules and may not be interchangeable.</p>
+
+<h2>How can you check and use a bridged token?</h2>
+<p>Start by selecting the network where the token arrived, then compare its contract address with the bridge’s destination details. A wallet can show a token entry without establishing that it is the expected asset or that an exchange or application supports it.</p>
+<ul>
+<li>Confirm the destination network and token contract from the bridge transaction or its official interface.</li>
+<li>Check that the transfer completed and that the wallet address matches the recipient address.</li>
+<li>Keep the destination network’s native gas token available for transactions.</li>
+<li>Before sending back, confirm which bridge and route can redeem or transfer that representation.</li>
+</ul>
+<p>Adding the correct contract is useful for viewing and handling the balance, but it does not make every bridged token liquid or redeemable through every service. The bridge’s supported route determines the next step: use the token on that network, swap it where supported, or send it through a compatible return route.</p>
+    </div>
+    <section class="s608c366">
+      <h2 class="sfd47c21">Related stories</h2>
+      <ul class="sa90e6d4">
+        <li><a href="/cross-chain-vesting-keeps-token-unlocks-on-schedule/">Cross-Chain Vesting Keeps Token Unlocks on Schedule</a></li>
+        <li><a href="/how-to-fund-a-solana-trading-wallet-from-ethereum/">How to Fund a Solana Trading Wallet From Ethereum</a></li>
+        <li><a href="/international-crypto-payouts-hinge-on-the-route-to-cash/">International crypto payouts hinge on the route to cash</a></li>
+        <li><a href="/why-smart-contract-pauses-stop-pending-token-transfers/">Why Smart Contract Pauses Stop Pending Token Transfers</a></li>
+      </ul>
+    </section>
+  </div>
+</article>
+</main>
+
+<footer class="s68d4aa4">
+  <div class="s391985a sb73b682">
+    <p class="sfe2a340">Blocktape</p>
+    <nav class="s68d87bb" aria-label="Site">
+      <ul>
+        <li><a href="/">Front page</a></li>
+        <li><a href="/archive/">All posts</a></li>
+        <li><a href="/about/">Masthead</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/editorial-policy/">Editorial policy</a></li>
+      </ul>
+    </nav>
+    <p class="s2c909db">Independent crypto coverage, for information only.</p>
+    <p class="s57d7fcf">© 2026 Blocktape</p>
+  </div>
+</footer>
+</body>
+</html>
