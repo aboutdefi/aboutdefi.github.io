@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cross-chain transfer status: what an app should show</title>
+<meta name="description" content="Show cross-chain transfers as separate origin, bridge and destination states, with chain-specific evidence, timestamps and a clear rule for when the app says complete.">
+<link rel="canonical" href="https://aboutdefi.github.io/how-to-show-cross-chain-transfer-status-in-an-app/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f3f4f7">
+<meta name="author" content="The Blocktape Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Blocktape">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How to show cross-chain transfer status in an app">
+<meta property="og:description" content="Show cross-chain transfers as separate origin, bridge and destination states, with chain-specific evidence, timestamps and a clear rule for when the app says complete.">
+<meta property="og:url" content="https://aboutdefi.github.io/how-to-show-cross-chain-transfer-status-in-an-app/">
+<meta property="og:image" content="https://aboutdefi.github.io/assets/covers/how-to-show-cross-chain-transfer-status-in-an-app-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to show cross-chain transfer status in an app"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to show cross-chain transfer status in an app">
+<meta name="twitter:description" content="Show cross-chain transfers as separate origin, bridge and destination states, with chain-specific evidence, timestamps and a clear rule for when the app says complete.">
+<meta property="article:published_time" content="2026-10-22T05:11:53+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5cca27938f.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blocktape" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://aboutdefi.github.io/how-to-show-cross-chain-transfer-status-in-an-app/#article",
+      "headline": "How to show cross-chain transfer status in an app",
+      "isAccessibleForFree": true,
+      "description": "Show cross-chain transfers as separate origin, bridge and destination states, with chain-specific evidence, timestamps and a clear rule for when the app says complete.",
+      "datePublished": "2026-10-22T05:11:53+00:00",
+      "dateModified": "2026-10-22T05:11:53+00:00",
+      "url": "https://aboutdefi.github.io/how-to-show-cross-chain-transfer-status-in-an-app/",
+      "mainEntityOfPage": {
+        "@id": "https://aboutdefi.github.io/how-to-show-cross-chain-transfer-status-in-an-app/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "wordCount": 380,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/how-to-show-cross-chain-transfer-status-in-an-app-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/how-to-show-cross-chain-transfer-status-in-an-app-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/how-to-show-cross-chain-transfer-status-in-an-app-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aboutdefi.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How to show cross-chain transfer status in an app",
+          "item": "https://aboutdefi.github.io/how-to-show-cross-chain-transfer-status-in-an-app/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://aboutdefi.github.io/#org",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://aboutdefi.github.io/editorial-policy/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aboutdefi.github.io/#website",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Blocktape reports crypto news: exchange and market moves, protocol upgrades, token launches, security incidents, regulation and enforcement across chains."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aboutdefi.github.io/how-to-show-cross-chain-transfer-status-in-an-app/#webpage",
+      "url": "https://aboutdefi.github.io/how-to-show-cross-chain-transfer-status-in-an-app/",
+      "name": "Cross-chain transfer status: what an app should show",
+      "isPartOf": {
+        "@id": "https://aboutdefi.github.io/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1723f48" href="#main">Skip to main content</a>
+<header class="s7ad23b1">
+  <div class="s391985a s96dce8e">
+    <a class="se6ac7dd" href="/">Blocktape</a>
+    <p class="s0856806">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s391985a s769e092">
+  <div class="sa3952f2">
+    <header class="s4d4a408">
+      <h1 class="se0278f7">How to show cross-chain transfer status in an app</h1>
+<p class="sd06bb4e">Show cross-chain transfers as separate origin, bridge and destination states, with chain-specific evidence, timestamps and a clear rule for when the app says complete.</p>      <p class="s9113865">
+        <span class="s12e7d28">The Blocktape Editors</span>
+        <span class="s27d9430"><time class="sf928d55" datetime="2026-10-22T05:11:53+00:00">Oct 22, 2026 · 05:11 UTC</time><span class="sd47928e">2 min read</span></span>
+        <span class="s2da8688">03a47e</span>
+      </p>
+    </header>
+    <figure class="s154f77a"><img width="1200" height="630" fetchpriority="high" class="scecec1a" src="/assets/covers/how-to-show-cross-chain-transfer-status-in-an-app.jpg" alt="How to show cross-chain transfer status in an app"></figure>
+    <div class="s4d974d2">
+      <p>An app should show a cross-chain transfer as a sequence of verified events, not a single “sent” label. Track the origin transaction, the bridge’s processing step and the destination transaction separately; mark the transfer complete only when the destination action is confirmed to the standard the app defines.</p>
+
+<h2>What status should a cross-chain transfer show?</h2>
+<p>Show the latest stage and what evidence supports it. A useful status sequence is:</p>
+<ul>
+<li><strong>Submitted:</strong> the app has received the request, but the origin transaction is not yet confirmed.</li>
+<li><strong>Origin confirmed:</strong> the source-chain transaction is included and has met the app’s confirmation threshold.</li>
+<li><strong>Bridge processing:</strong> the bridge is verifying, relaying or waiting through a protocol-specific step.</li>
+<li><strong>Destination confirmed:</strong> the destination-chain transaction has been found and confirmed.</li>
+</ul>
+<p>Not every route exposes a separate bridge event. In that case, say “waiting for destination” and explain the last verified event, rather than implying the bridge is stuck or finished. For a fuller look at Ethereum-to-L2 routes, the article on <a href="https://tareom.com/three-super-bridge-routes-from-ethereum-to-an-l2/" rel="noopener">super bridge</a> designs compares how route mechanics affect that middle stage.</p>
+
+<h2>What evidence should the app display?</h2>
+<p>Attach each state to its own chain and transaction. Show the network name, transaction hash, timestamp, amount and token, plus a link to the relevant explorer if the app has a verified URL for it. Keep the origin and destination hashes distinct: one transfer may involve two transactions, and a bridge may expose additional identifiers.</p>
+<p>Use chain-specific confirmation rules. A transaction appearing in a block is not always the same as being final; the app should state whether its label means included, confirmed after a chosen threshold, or final under that chain’s rules. Do not present an estimated arrival time as a guarantee.</p>
+
+<h2>How should the app handle delays or failures?</h2>
+<p>Keep the last verified state visible and add a plain explanation of what is pending. If the origin transaction fails, report that; if it succeeds but no destination event is found, report that the transfer is awaiting destination evidence. Do not infer failure from elapsed time alone.</p>
+<p>For most apps, the clearest design is a compact timeline with one status per stage, timestamps, and links to the available transaction records. That gives users a way to check progress without treating an origin-chain confirmation as proof that the destination funds have arrived.</p>
+    </div>
+    <section class="s608c366">
+      <h2 class="sfd47c21">Related stories</h2>
+      <ul class="sa90e6d4">
+        <li><a href="/anza-activates-alpenglow-on-solana-targeting-150ms-finality-2/">Anza activates Alpenglow on Solana, targeting 150ms finality</a></li>
+        <li><a href="/anza-activates-alpenglow-on-solana-targeting-150ms-finality/">Anza activates Alpenglow on Solana, targeting 150ms finality</a></li>
+        <li><a href="/syncswap-pool-types-shape-trades-and-liquidity-risk/">SyncSwap pool types shape trades and liquidity risk</a></li>
+        <li><a href="/wormhole-bridge-transfer-types-which-fits-your-token/">wormhole bridge transfer types: which fits your token?</a></li>
+      </ul>
+    </section>
+  </div>
+</article>
+</main>
+
+<footer class="s68d4aa4">
+  <div class="s391985a sb73b682">
+    <p class="sfe2a340">Blocktape</p>
+    <nav class="s68d87bb" aria-label="Site">
+      <ul>
+        <li><a href="/">Front page</a></li>
+        <li><a href="/archive/">All posts</a></li>
+        <li><a href="/about/">Masthead</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/editorial-policy/">Editorial policy</a></li>
+      </ul>
+    </nav>
+    <p class="s2c909db">Independent crypto coverage, for information only.</p>
+    <p class="s57d7fcf">© 2026 Blocktape</p>
+  </div>
+</footer>
+</body>
+</html>
