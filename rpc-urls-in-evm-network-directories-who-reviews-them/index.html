@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Who checks RPC URLs in EVM network directories? | Blocktape</title>
+<meta name="description" content="Maintainers review RPC submissions before listing them; providers run the endpoints. Learn what Chainlist checks and what your wallet confirms.">
+<link rel="canonical" href="https://aboutdefi.github.io/rpc-urls-in-evm-network-directories-who-reviews-them/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f3f4f7">
+<meta name="author" content="The Blocktape Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Blocktape">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="RPC URLs in EVM network directories: who reviews them">
+<meta property="og:description" content="Maintainers review RPC submissions before listing them; providers run the endpoints. Learn what Chainlist checks and what your wallet confirms.">
+<meta property="og:url" content="https://aboutdefi.github.io/rpc-urls-in-evm-network-directories-who-reviews-them/">
+<meta property="og:image" content="https://aboutdefi.github.io/assets/covers/rpc-urls-in-evm-network-directories-who-reviews-them-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="RPC URLs in EVM network directories: who reviews them"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="RPC URLs in EVM network directories: who reviews them">
+<meta name="twitter:description" content="Maintainers review RPC submissions before listing them; providers run the endpoints. Learn what Chainlist checks and what your wallet confirms.">
+<meta property="article:published_time" content="2026-11-26T01:36:01+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5cca27938f.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blocktape" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://aboutdefi.github.io/rpc-urls-in-evm-network-directories-who-reviews-them/#article",
+      "headline": "RPC URLs in EVM network directories: who reviews them",
+      "isAccessibleForFree": true,
+      "description": "Maintainers review RPC submissions before listing them; providers run the endpoints. Learn what Chainlist checks and what your wallet confirms.",
+      "datePublished": "2026-11-26T01:36:01+00:00",
+      "dateModified": "2026-11-26T01:36:01+00:00",
+      "url": "https://aboutdefi.github.io/rpc-urls-in-evm-network-directories-who-reviews-them/",
+      "mainEntityOfPage": {
+        "@id": "https://aboutdefi.github.io/rpc-urls-in-evm-network-directories-who-reviews-them/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "wordCount": 374,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/rpc-urls-in-evm-network-directories-who-reviews-them-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/rpc-urls-in-evm-network-directories-who-reviews-them-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/rpc-urls-in-evm-network-directories-who-reviews-them-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aboutdefi.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "RPC URLs in EVM network directories: who reviews them",
+          "item": "https://aboutdefi.github.io/rpc-urls-in-evm-network-directories-who-reviews-them/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://aboutdefi.github.io/#org",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://aboutdefi.github.io/editorial-policy/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aboutdefi.github.io/#website",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Blocktape reports crypto news: exchange and market moves, protocol upgrades, token launches, security incidents, regulation and enforcement across chains."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aboutdefi.github.io/rpc-urls-in-evm-network-directories-who-reviews-them/#webpage",
+      "url": "https://aboutdefi.github.io/rpc-urls-in-evm-network-directories-who-reviews-them/",
+      "name": "Who checks RPC URLs in EVM network directories? | Blocktape",
+      "isPartOf": {
+        "@id": "https://aboutdefi.github.io/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1723f48" href="#main">Skip to main content</a>
+<header class="s7ad23b1">
+  <div class="s391985a s96dce8e">
+    <a class="se6ac7dd" href="/">Blocktape</a>
+    <p class="s0856806">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s391985a s769e092">
+  <div class="sa3952f2">
+    <header class="s4d4a408">
+      <h1 class="se0278f7">RPC URLs in EVM network directories: who reviews them</h1>
+<p class="sd06bb4e">Maintainers review RPC submissions before listing them; providers run the endpoints. Learn what Chainlist checks and what your wallet confirms.</p>      <p class="s9113865">
+        <span class="s12e7d28">The Blocktape Editors</span>
+        <span class="s27d9430"><time class="sf928d55" datetime="2026-11-26T01:36:01+00:00">Nov 26, 2026 · 01:36 UTC</time><span class="sd47928e">2 min read</span></span>
+        <span class="s2da8688">78ecc0</span>
+      </p>
+    </header>
+    <figure class="s154f77a"><img width="1200" height="630" fetchpriority="high" class="scecec1a" src="/assets/covers/rpc-urls-in-evm-network-directories-who-reviews-them.jpg" alt="RPC URLs in EVM network directories: who reviews them"></figure>
+    <div class="s4d974d2">
+      <p>Maintainers review pull requests before an RPC URL is listed; the provider behind it runs the endpoint. That distinction tells you what trust you extend when adding a network.</p>
+<p>Chainlist builds network data on the open ethereum-lists/chains registry, which chainid.network also uses. <a href="https://blockdigest.pages.dev/where-does-chainlist-get-network-data-the-rpc-path/" rel="noopener">Chainlist</a> presents network details and RPC endpoints drawn from that data and its own public repository.</p>
+<h2>How an RPC URL gets listed</h2>
+<p>Anyone can propose an endpoint through a pull request to DefiLlama’s public chainlist GitHub repository. The project’s instructions direct contributors to add RPCs to the relevant chain in <em>extraRpcs.js</em>.</p>
+<p>Maintainers review the proposed change before merging it, including its format and basic validity. The pull request and review history show the change being considered; being merged means it was accepted into the directory, not that the endpoint has passed an ongoing security or reliability audit.</p>
+<p>The file’s commit history makes that process checkable. Find an endpoint in <em>extraRpcs.js</em>, open its GitHub history, and trace the commit to the pull request that added it. You can see who proposed the change and when it entered the file, then read the discussion for the context maintainers had at the time.</p>
+<h2>What the listing tells you about the provider</h2>
+<p>Once listed, an RPC endpoint is run by its provider, which controls its uptime, logging and the data it serves. Directory labels reflect the provider’s stated policy when the endpoint was submitted; they are not a live check of how it is operated now.</p>
+<p>Say you add Polygon from Chainlist in MetaMask. The URL shown in the wallet prompt points to an RPC provider, and requests sent through it expose your IP address and activity to that provider. Its responses supply the blockchain data your wallet displays.</p>
+<p>MetaMask can check the endpoint’s chain ID using the JSON-RPC method <em>eth_chainId</em>, which returns the ID used for replay-protected transactions, as documented by ethereum.org. That confirms which chain the endpoint reports; it does not tell you who operates it or what they log.</p>
+<p>Before accepting the Polygon URL, identify its provider and decide whether you trust that provider with your requests. The pull request history can show how the URL entered the directory; your choice of endpoint determines who receives your wallet’s RPC traffic.</p>
+    </div>
+    <section class="s608c366">
+      <h2 class="sfd47c21">Related stories</h2>
+      <ul class="sa90e6d4">
+        <li><a href="/gnosis-chain-uses-payments-defi-and-low-cost-validation/">Gnosis Chain Uses: Payments, DeFi and Low-Cost Validation</a></li>
+        <li><a href="/eu-proposal-targets-60-russian-banks-and-crypto-networks/">EU proposal targets 60 Russian banks and crypto networks</a></li>
+        <li><a href="/suibridge-vs-an-exchange-withdrawal-when-gas-is-high/">Suibridge vs an Exchange Withdrawal When Gas Is High</a></li>
+        <li><a href="/doj-seeks-forfeiture-of-1-1b-in-usdc-tied-to-binance-hack/">DOJ seeks forfeiture of $1.1B in USDC tied to Binance hack</a></li>
+      </ul>
+    </section>
+  </div>
+</article>
+</main>
+
+<footer class="s68d4aa4">
+  <div class="s391985a sb73b682">
+    <p class="sfe2a340">Blocktape</p>
+    <nav class="s68d87bb" aria-label="Site">
+      <ul>
+        <li><a href="/">Front page</a></li>
+        <li><a href="/archive/">All posts</a></li>
+        <li><a href="/about/">Masthead</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/editorial-policy/">Editorial policy</a></li>
+      </ul>
+    </nav>
+    <p class="s2c909db">Independent crypto coverage, for information only.</p>
+    <p class="s57d7fcf">© 2026 Blocktape</p>
+  </div>
+</footer>
+</body>
+</html>
