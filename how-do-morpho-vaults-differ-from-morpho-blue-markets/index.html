@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morpho vaults vs Morpho Blue markets: lending choices</title>
+<meta name="description" content="Morpho vaults pool one asset across curated Morpho Blue markets; direct lending picks one market, giving lenders more control and a concentrated risk choice.">
+<link rel="canonical" href="https://aboutdefi.github.io/how-do-morpho-vaults-differ-from-morpho-blue-markets/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f3f4f7">
+<meta name="author" content="The Blocktape Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Blocktape">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How do Morpho vaults differ from Morpho Blue markets?">
+<meta property="og:description" content="Morpho vaults pool one asset across curated Morpho Blue markets; direct lending picks one market, giving lenders more control and a concentrated risk choice.">
+<meta property="og:url" content="https://aboutdefi.github.io/how-do-morpho-vaults-differ-from-morpho-blue-markets/">
+<meta property="og:image" content="https://aboutdefi.github.io/assets/covers/how-do-morpho-vaults-differ-from-morpho-blue-markets-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How do Morpho vaults differ from Morpho Blue markets?"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How do Morpho vaults differ from Morpho Blue markets?">
+<meta name="twitter:description" content="Morpho vaults pool one asset across curated Morpho Blue markets; direct lending picks one market, giving lenders more control and a concentrated risk choice.">
+<meta property="article:published_time" content="2026-11-27T23:44:44+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5cca27938f.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blocktape" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://aboutdefi.github.io/how-do-morpho-vaults-differ-from-morpho-blue-markets/#article",
+      "headline": "How do Morpho vaults differ from Morpho Blue markets?",
+      "isAccessibleForFree": true,
+      "description": "Morpho vaults pool one asset across curated Morpho Blue markets; direct lending picks one market, giving lenders more control and a concentrated risk choice.",
+      "datePublished": "2026-11-27T23:44:44+00:00",
+      "dateModified": "2026-11-27T23:44:44+00:00",
+      "url": "https://aboutdefi.github.io/how-do-morpho-vaults-differ-from-morpho-blue-markets/",
+      "mainEntityOfPage": {
+        "@id": "https://aboutdefi.github.io/how-do-morpho-vaults-differ-from-morpho-blue-markets/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "wordCount": 469,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/how-do-morpho-vaults-differ-from-morpho-blue-markets-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/how-do-morpho-vaults-differ-from-morpho-blue-markets-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/how-do-morpho-vaults-differ-from-morpho-blue-markets-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aboutdefi.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How do Morpho vaults differ from Morpho Blue markets?",
+          "item": "https://aboutdefi.github.io/how-do-morpho-vaults-differ-from-morpho-blue-markets/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://aboutdefi.github.io/#org",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://aboutdefi.github.io/editorial-policy/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aboutdefi.github.io/#website",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Blocktape reports crypto news: exchange and market moves, protocol upgrades, token launches, security incidents, regulation and enforcement across chains."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aboutdefi.github.io/how-do-morpho-vaults-differ-from-morpho-blue-markets/#webpage",
+      "url": "https://aboutdefi.github.io/how-do-morpho-vaults-differ-from-morpho-blue-markets/",
+      "name": "Morpho vaults vs Morpho Blue markets: lending choices",
+      "isPartOf": {
+        "@id": "https://aboutdefi.github.io/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1723f48" href="#main">Skip to main content</a>
+<header class="s7ad23b1">
+  <div class="s391985a s96dce8e">
+    <a class="se6ac7dd" href="/">Blocktape</a>
+    <p class="s0856806">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s391985a s769e092">
+  <div class="sa3952f2">
+    <header class="s4d4a408">
+      <h1 class="se0278f7">How do Morpho vaults differ from Morpho Blue markets?</h1>
+<p class="sd06bb4e">Morpho vaults pool one asset across curated Morpho Blue markets; direct lending picks one market, giving lenders more control and a concentrated risk choice.</p>      <p class="s9113865">
+        <span class="s12e7d28">The Blocktape Editors</span>
+        <span class="s27d9430"><time class="sf928d55" datetime="2026-11-27T23:44:44+00:00">Nov 27, 2026 · 23:44 UTC</time><span class="sd47928e">3 min read</span></span>
+        <span class="s2da8688">809fb0</span>
+      </p>
+    </header>
+    <figure class="s154f77a"><img width="1200" height="630" fetchpriority="high" class="scecec1a" src="/assets/covers/how-do-morpho-vaults-differ-from-morpho-blue-markets.jpg" alt="How do Morpho vaults differ from Morpho Blue markets?"></figure>
+    <div class="s4d974d2">
+      <p>After weighing lending routes, Morpho vaults spread a lender’s deposit across curated Morpho Blue markets, while direct supply puts it into one market. The choice is between delegated allocation and control over a specific lending pair.</p>
+<p>A direct supplier chooses the loan asset, collateral, oracle and LLTV of a single market. For a broader comparison of Morpho vault deposits and how they work, <a href="https://morphovaults.app" rel="noopener">Morpho vaults</a> are a useful next move.</p>
+<h2>Morpho vaults spread deposits across markets</h2>
+<p>Morpho vaults put a pool of one asset under a Curator’s strategy, then an Allocator moves funds among eligible markets. The Curator sets the risk framework; the Allocator handles deployment within it.</p>
+<p>Each Morpho Blue market is an isolated pair with one loan asset, one collateral asset, an oracle, an interest rate model and an LLTV, all fixed at creation. A vault sits above these markets and can allocate its deposits across several of them.</p>
+<p>Say a USDC vault allocates to wstETH/USDC and WBTC/USDC markets. Its depositors get exposure to both; a direct USDC supplier picks one market and takes that market’s risk alone.</p>
+<p>That spread changes the lender’s exposure, not the underlying market rules. Vault depositors give up choosing collateral market by market, but still take a pro-rata share of bad debt from every market the vault supplies. In Morpho Blue, bad debt is realised immediately and shared among that market’s suppliers, so a vault’s share of a loss depends on its allocation there.</p>
+<p>Markets fit lenders who want to select and monitor collateral and oracle themselves. Vaults fit lenders who prefer a Curator and Allocator to manage diversification and allocation, while accepting their choices and the risks of each underlying market. Borrowers use markets; vault depositors are lenders.</p>
+<p>Before choosing, compare the markets in a vault’s strategy, their collateral and oracles, and the vault’s Morpho vault APY alongside its exposure and liquidity. That gives you a basis to choose between hands-on market selection and delegated allocation.</p>
+<h2>Four Morpho lending questions</h2>
+<p>These answers cover curator choice, market creation, audits and oracle failure.</p>
+<h3>Who are the biggest Morpho vault curators?</h3>
+<p>There is no permanent ranking: vault size can change over time. Compare the assets managed by current vaults, then assess each Curator’s strategy and risk decisions.</p>
+<h3>How do I create a Morpho Blue market?</h3>
+<p>Market creation is permissionless. A creator fixes the loan asset, collateral asset, oracle, interest rate model and LLTV at creation.</p>
+<h3>Are Morpho vaults audited?</h3>
+<p>Audit status depends on the specific vault version and contracts involved. Check the deployment and its underlying adapters and markets; an audit does not remove market or oracle risk.</p>
+<h3>What happens if a Morpho market’s oracle fails?</h3>
+<p>Price-dependent actions such as borrowing and liquidation may stop while the oracle is unavailable. Supplying or withdrawing may still work, but a lender’s exit depends on available liquidity.</p>
+    </div>
+    <section class="s608c366">
+      <h2 class="sfd47c21">Related stories</h2>
+      <ul class="sa90e6d4">
+        <li><a href="/base-sequencer-fees-from-ethereum-costs-to-revenue/">Base sequencer fees: From Ethereum costs to revenue</a></li>
+        <li><a href="/zodia-custody-breach-exposed-limited-client-and-staff-data/">Zodia Custody breach exposed limited client and staff data</a></li>
+        <li><a href="/eu-proposal-targets-crypto-networks-in-russia-sanctions-package/">EU proposal targets crypto networks in Russia sanctions package</a></li>
+        <li><a href="/usdc-sent-to-an-ethereum-only-exchange-on-polygon/">USDC sent to an Ethereum-only exchange on Polygon</a></li>
+      </ul>
+    </section>
+  </div>
+</article>
+</main>
+
+<footer class="s68d4aa4">
+  <div class="s391985a sb73b682">
+    <p class="sfe2a340">Blocktape</p>
+    <nav class="s68d87bb" aria-label="Site">
+      <ul>
+        <li><a href="/">Front page</a></li>
+        <li><a href="/archive/">All posts</a></li>
+        <li><a href="/about/">Masthead</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/editorial-policy/">Editorial policy</a></li>
+      </ul>
+    </nav>
+    <p class="s2c909db">Independent crypto coverage, for information only.</p>
+    <p class="s57d7fcf">© 2026 Blocktape</p>
+  </div>
+</footer>
+</body>
+</html>
