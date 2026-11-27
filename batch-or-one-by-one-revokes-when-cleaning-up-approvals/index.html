@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Batch revoke vs one-by-one token approvals: which to use</title>
+<meta name="description" content="Batch revoke vs one-by-one token approval revoke: start with individual checks for a first cleanup; batch stale approvals once you can identify every spender.">
+<link rel="canonical" href="https://aboutdefi.github.io/batch-or-one-by-one-revokes-when-cleaning-up-approvals/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f3f4f7">
+<meta name="author" content="The Blocktape Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Blocktape">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Batch or one-by-one revokes when cleaning up approvals">
+<meta property="og:description" content="Batch revoke vs one-by-one token approval revoke: start with individual checks for a first cleanup; batch stale approvals once you can identify every spender.">
+<meta property="og:url" content="https://aboutdefi.github.io/batch-or-one-by-one-revokes-when-cleaning-up-approvals/">
+<meta property="og:image" content="https://aboutdefi.github.io/assets/covers/batch-or-one-by-one-revokes-when-cleaning-up-approvals-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Batch or one-by-one revokes when cleaning up approvals"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Batch or one-by-one revokes when cleaning up approvals">
+<meta name="twitter:description" content="Batch revoke vs one-by-one token approval revoke: start with individual checks for a first cleanup; batch stale approvals once you can identify every spender.">
+<meta property="article:published_time" content="2026-11-27T02:34:34+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5cca27938f.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blocktape" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://aboutdefi.github.io/batch-or-one-by-one-revokes-when-cleaning-up-approvals/#article",
+      "headline": "Batch or one-by-one revokes when cleaning up approvals",
+      "isAccessibleForFree": true,
+      "description": "Batch revoke vs one-by-one token approval revoke: start with individual checks for a first cleanup; batch stale approvals once you can identify every spender.",
+      "datePublished": "2026-11-27T02:34:34+00:00",
+      "dateModified": "2026-11-27T02:34:34+00:00",
+      "url": "https://aboutdefi.github.io/batch-or-one-by-one-revokes-when-cleaning-up-approvals/",
+      "mainEntityOfPage": {
+        "@id": "https://aboutdefi.github.io/batch-or-one-by-one-revokes-when-cleaning-up-approvals/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "wordCount": 413,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/batch-or-one-by-one-revokes-when-cleaning-up-approvals-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/batch-or-one-by-one-revokes-when-cleaning-up-approvals-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/batch-or-one-by-one-revokes-when-cleaning-up-approvals-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aboutdefi.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Batch or one-by-one revokes when cleaning up approvals",
+          "item": "https://aboutdefi.github.io/batch-or-one-by-one-revokes-when-cleaning-up-approvals/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://aboutdefi.github.io/#org",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://aboutdefi.github.io/editorial-policy/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aboutdefi.github.io/#website",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Blocktape reports crypto news: exchange and market moves, protocol upgrades, token launches, security incidents, regulation and enforcement across chains."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aboutdefi.github.io/batch-or-one-by-one-revokes-when-cleaning-up-approvals/#webpage",
+      "url": "https://aboutdefi.github.io/batch-or-one-by-one-revokes-when-cleaning-up-approvals/",
+      "name": "Batch revoke vs one-by-one token approvals: which to use",
+      "isPartOf": {
+        "@id": "https://aboutdefi.github.io/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1723f48" href="#main">Skip to main content</a>
+<header class="s7ad23b1">
+  <div class="s391985a s96dce8e">
+    <a class="se6ac7dd" href="/">Blocktape</a>
+    <p class="s0856806">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s391985a s769e092">
+  <div class="sa3952f2">
+    <header class="s4d4a408">
+      <h1 class="se0278f7">Batch or one-by-one revokes when cleaning up approvals</h1>
+<p class="sd06bb4e">Batch revoke vs one-by-one token approval revoke: start with individual checks for a first cleanup; batch stale approvals once you can identify every spender.</p>      <p class="s9113865">
+        <span class="s12e7d28">The Blocktape Editors</span>
+        <span class="s27d9430"><time class="sf928d55" datetime="2026-11-27T02:34:34+00:00">Nov 27, 2026 · 02:34 UTC</time><span class="sd47928e">3 min read</span></span>
+        <span class="s2da8688">d92999</span>
+      </p>
+    </header>
+    <figure class="s154f77a"><img width="1200" height="630" fetchpriority="high" class="scecec1a" src="/assets/covers/batch-or-one-by-one-revokes-when-cleaning-up-approvals.jpg" alt="Batch or one-by-one revokes when cleaning up approvals"></figure>
+    <div class="s4d974d2">
+      <p>Beginners should revoke token approvals one by one for their first cleanup, then batch revoke once they can confidently identify each spender. Reviewing each approval before signing helps you avoid removing access a dapp you still use needs.</p>
+<p>Approval-management tools can help you inspect the permissions your wallet has granted. <a href="https://revokecash.io" rel="noopener">revokecash</a> is one such tool; batch revoking suits its use case when you have many stale approvals and already know which spenders you no longer need.</p>
+<h2>How do approval count, review and gas change the choice?</h2>
+<p>One-by-one revoking means a prompt for each approval and a chance to check its spender. Batch revoking lets you select several approvals together, saving clicks but giving you less practice reading each entry before you act.</p>
+<p>For an ERC-20 token, revoking sets the allowance to zero with <em>approve(spender, 0)</em>. For an NFT, revoking an operator approval uses <em>setApprovalForAll(operator, false)</em>. In either case, each revoke is an onchain transaction and costs gas on that network.</p>
+<p>On a regular wallet account, selecting many approvals for a batch revoke still means one transaction per approval, with its own confirmation prompt and gas fee. Wallets that support EIP-5792 batched calls can combine calls into a single confirmation; an EIP-7702 smart account is one example of a setup that can support this. Check what your wallet supports before expecting a batch to reduce prompts or fees.</p>
+<p>One-by-one transactions also make it easier to see which approval failed or still needs attention. With a batch, review the resulting approval status afterward; how failures are handled depends on the wallet and the way it submits the calls.</p>
+<h2>Who should choose each revoke method?</h2>
+<p>Choose one-by-one revoking if you have only a few approvals or you are unsure what a spender is. Read each spender, decide whether you still use the related dapp, then confirm that revoke. If you revoke an approval for a dapp you return to, you may need to approve it again and pay gas for that new transaction.</p>
+<p>Choose batch revoking when you have many stale approvals and have already identified the spenders you no longer need. Review the selected entries before submitting, and factor in each transaction’s prompt and gas cost unless your wallet supports batched calls.</p>
+<p>Revisit the choice when your approval list grows or you learn to recognize its spenders: a first cleanup with a few uncertain entries calls for individual checks; a large set of confirmed stale approvals is a better fit for batch revoking.</p>
+    </div>
+    <section class="s608c366">
+      <h2 class="sfd47c21">Related stories</h2>
+      <ul class="sa90e6d4">
+        <li><a href="/eu-proposal-targets-crypto-networks-and-60-russian-banks/">EU proposal targets crypto networks and 60 Russian banks</a></li>
+        <li><a href="/why-wallets-treat-custom-networks-differently-what-changes/">Why wallets treat custom networks differently: What changes</a></li>
+        <li><a href="/when-are-ethereum-gas-fees-lowest-for-sui-timing-a-deposit/">When Are Ethereum Gas Fees Lowest for Sui? Timing a Deposit</a></li>
+        <li><a href="/rpc-urls-in-evm-network-directories-who-reviews-them/">RPC URLs in EVM network directories: who reviews them</a></li>
+      </ul>
+    </section>
+  </div>
+</article>
+</main>
+
+<footer class="s68d4aa4">
+  <div class="s391985a sb73b682">
+    <p class="sfe2a340">Blocktape</p>
+    <nav class="s68d87bb" aria-label="Site">
+      <ul>
+        <li><a href="/">Front page</a></li>
+        <li><a href="/archive/">All posts</a></li>
+        <li><a href="/about/">Masthead</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/editorial-policy/">Editorial policy</a></li>
+      </ul>
+    </nav>
+    <p class="s2c909db">Independent crypto coverage, for information only.</p>
+    <p class="s57d7fcf">© 2026 Blocktape</p>
+  </div>
+</footer>
+</body>
+</html>
