@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Base makes money from sequencer fees after L1 costs</title>
+<meta name="description" content="How Base makes money from sequencer fees: it collects L2 execution and data fees, pays Ethereum to post transaction batches, then keeps the remainder.">
+<link rel="canonical" href="https://aboutdefi.github.io/base-sequencer-fees-from-ethereum-costs-to-revenue/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f3f4f7">
+<meta name="author" content="The Blocktape Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Blocktape">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Base sequencer fees: From Ethereum costs to revenue">
+<meta property="og:description" content="How Base makes money from sequencer fees: it collects L2 execution and data fees, pays Ethereum to post transaction batches, then keeps the remainder.">
+<meta property="og:url" content="https://aboutdefi.github.io/base-sequencer-fees-from-ethereum-costs-to-revenue/">
+<meta property="og:image" content="https://aboutdefi.github.io/assets/covers/base-sequencer-fees-from-ethereum-costs-to-revenue-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Base sequencer fees: From Ethereum costs to revenue"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Base sequencer fees: From Ethereum costs to revenue">
+<meta name="twitter:description" content="How Base makes money from sequencer fees: it collects L2 execution and data fees, pays Ethereum to post transaction batches, then keeps the remainder.">
+<meta property="article:published_time" content="2026-11-27T23:28:07+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5cca27938f.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blocktape" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://aboutdefi.github.io/base-sequencer-fees-from-ethereum-costs-to-revenue/#article",
+      "headline": "Base sequencer fees: From Ethereum costs to revenue",
+      "isAccessibleForFree": true,
+      "description": "How Base makes money from sequencer fees: it collects L2 execution and data fees, pays Ethereum to post transaction batches, then keeps the remainder.",
+      "datePublished": "2026-11-27T23:28:07+00:00",
+      "dateModified": "2026-11-27T23:28:07+00:00",
+      "url": "https://aboutdefi.github.io/base-sequencer-fees-from-ethereum-costs-to-revenue/",
+      "mainEntityOfPage": {
+        "@id": "https://aboutdefi.github.io/base-sequencer-fees-from-ethereum-costs-to-revenue/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "wordCount": 337,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/base-sequencer-fees-from-ethereum-costs-to-revenue-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/base-sequencer-fees-from-ethereum-costs-to-revenue-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/base-sequencer-fees-from-ethereum-costs-to-revenue-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aboutdefi.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Base sequencer fees: From Ethereum costs to revenue",
+          "item": "https://aboutdefi.github.io/base-sequencer-fees-from-ethereum-costs-to-revenue/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://aboutdefi.github.io/#org",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://aboutdefi.github.io/editorial-policy/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aboutdefi.github.io/#website",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Blocktape reports crypto news: exchange and market moves, protocol upgrades, token launches, security incidents, regulation and enforcement across chains."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aboutdefi.github.io/base-sequencer-fees-from-ethereum-costs-to-revenue/#webpage",
+      "url": "https://aboutdefi.github.io/base-sequencer-fees-from-ethereum-costs-to-revenue/",
+      "name": "How Base makes money from sequencer fees after L1 costs",
+      "isPartOf": {
+        "@id": "https://aboutdefi.github.io/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1723f48" href="#main">Skip to main content</a>
+<header class="s7ad23b1">
+  <div class="s391985a s96dce8e">
+    <a class="se6ac7dd" href="/">Blocktape</a>
+    <p class="s0856806">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s391985a s769e092">
+  <div class="sa3952f2">
+    <header class="s4d4a408">
+      <h1 class="se0278f7">Base sequencer fees: From Ethereum costs to revenue</h1>
+<p class="sd06bb4e">How Base makes money from sequencer fees: it collects L2 execution and data fees, pays Ethereum to post transaction batches, then keeps the remainder.</p>      <p class="s9113865">
+        <span class="s12e7d28">The Blocktape Editors</span>
+        <span class="s27d9430"><time class="sf928d55" datetime="2026-11-27T23:28:07+00:00">Nov 27, 2026 · 23:28 UTC</time><span class="sd47928e">2 min read</span></span>
+        <span class="s2da8688">b74f40</span>
+      </p>
+    </header>
+    <figure class="s154f77a"><img width="1200" height="630" fetchpriority="high" class="scecec1a" src="/assets/covers/base-sequencer-fees-from-ethereum-costs-to-revenue.jpg" alt="Base sequencer fees: From Ethereum costs to revenue"></figure>
+    <div class="s4d974d2">
+      <p>Base earns revenue from L2 execution fees and L1 data fees, then pays Ethereum to post transaction data and keeps what remains after those costs and its share to the Optimism Collective.</p>
+<h2>Base fees enter vaults before Ethereum costs</h2>
+<p>Base’s sequencer orders transactions and collects three possible charges: an L2 base fee, an optional priority fee and an L1 data fee. The fees accrue to protocol vaults, so a transaction’s total gas charge combines payment for execution on Base with the cost of publishing its data to Ethereum.</p>
+<p>Base’s fee vaults are predeploys at 0x4200...0011 (SequencerFeeVault), 0x4200...0019 (BaseFeeVault) and 0x4200...001A (L1FeeVault). On Basescan, you can look up those addresses and follow their onchain activity to see fee income accumulating in the contracts.</p>
+<p>Base pays Ethereum gas to post transaction batches, mainly as blobs since EIP-4844. Those posting costs vary with Ethereum’s data fees and the amount of data in a batch; the gap between user fees and those costs is Base’s margin before the Collective share.</p>
+<p>Base bridge moves supported assets between Ethereum and Base, while the revenue calculation follows transactions that execute on Base. For cross-chain context, <a href="https://graph.org/Base-bridge-fees-and-transfer-time-when-withdrawals-arrive-11-27" rel="noopener">bridge crypto to Base</a> helps show where an asset moves; Base still incurs Ethereum posting costs for its transaction data.</p>
+<h2>A Base swap shows where the margin goes</h2>
+<p>A swap on Base pays the L2 base fee, any priority fee and an L1 data fee. The sequencer orders it with other transactions, fees flow into the vaults, and Base later pays Ethereum to post the batch containing that swap.</p>
+<p>What remains after the batch cost is not all Base’s net revenue. Base shares revenue with the Optimism Collective at the greater of 2.5% of sequencer revenue or 15% of net onchain profit; after that share, the remainder is Base’s net revenue.</p>
+<p>That fee path applies to everyday Base activity, including swaps and other transactions that use the network. Each transaction adds its fees to the vault flow, and its data is grouped into a batch for posting to Ethereum.</p>
+    </div>
+    <section class="s608c366">
+      <h2 class="sfd47c21">Related stories</h2>
+      <ul class="sa90e6d4">
+        <li><a href="/zodia-custody-breach-exposed-limited-client-and-staff-data/">Zodia Custody breach exposed limited client and staff data</a></li>
+        <li><a href="/eu-proposal-targets-crypto-networks-in-russia-sanctions-package/">EU proposal targets crypto networks in Russia sanctions package</a></li>
+        <li><a href="/usdc-sent-to-an-ethereum-only-exchange-on-polygon/">USDC sent to an Ethereum-only exchange on Polygon</a></li>
+        <li><a href="/how-to-pay-with-xdai-on-gnosis-chain-from-your-wallet/">How to pay with xDai on Gnosis Chain from your wallet</a></li>
+      </ul>
+    </section>
+  </div>
+</article>
+</main>
+
+<footer class="s68d4aa4">
+  <div class="s391985a sb73b682">
+    <p class="sfe2a340">Blocktape</p>
+    <nav class="s68d87bb" aria-label="Site">
+      <ul>
+        <li><a href="/">Front page</a></li>
+        <li><a href="/archive/">All posts</a></li>
+        <li><a href="/about/">Masthead</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/editorial-policy/">Editorial policy</a></li>
+      </ul>
+    </nav>
+    <p class="s2c909db">Independent crypto coverage, for information only.</p>
+    <p class="s57d7fcf">© 2026 Blocktape</p>
+  </div>
+</footer>
+</body>
+</html>
