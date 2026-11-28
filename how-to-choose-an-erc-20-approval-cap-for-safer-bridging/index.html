@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unlimited vs exact token approval: choose the safer cap</title>
+<meta name="description" content="Unlimited vs exact token approval: exact is safer for occasional lifi bridge transfers; unlimited saves an approve transaction for frequent repeat moves.">
+<link rel="canonical" href="https://aboutdefi.github.io/how-to-choose-an-erc-20-approval-cap-for-safer-bridging/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#f3f4f7">
+<meta name="author" content="The Blocktape Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Blocktape">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How to choose an ERC-20 approval cap for safer bridging">
+<meta property="og:description" content="Unlimited vs exact token approval: exact is safer for occasional lifi bridge transfers; unlimited saves an approve transaction for frequent repeat moves.">
+<meta property="og:url" content="https://aboutdefi.github.io/how-to-choose-an-erc-20-approval-cap-for-safer-bridging/">
+<meta property="og:image" content="https://aboutdefi.github.io/assets/covers/how-to-choose-an-erc-20-approval-cap-for-safer-bridging-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to choose an ERC-20 approval cap for safer bridging"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to choose an ERC-20 approval cap for safer bridging">
+<meta name="twitter:description" content="Unlimited vs exact token approval: exact is safer for occasional lifi bridge transfers; unlimited saves an approve transaction for frequent repeat moves.">
+<meta property="article:published_time" content="2026-11-28T06:00:39+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s5cca27938f.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blocktape" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://aboutdefi.github.io/how-to-choose-an-erc-20-approval-cap-for-safer-bridging/#article",
+      "headline": "How to choose an ERC-20 approval cap for safer bridging",
+      "isAccessibleForFree": true,
+      "description": "Unlimited vs exact token approval: exact is safer for occasional lifi bridge transfers; unlimited saves an approve transaction for frequent repeat moves.",
+      "datePublished": "2026-11-28T06:00:39+00:00",
+      "dateModified": "2026-11-28T06:00:39+00:00",
+      "url": "https://aboutdefi.github.io/how-to-choose-an-erc-20-approval-cap-for-safer-bridging/",
+      "mainEntityOfPage": {
+        "@id": "https://aboutdefi.github.io/how-to-choose-an-erc-20-approval-cap-for-safer-bridging/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "wordCount": 342,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/how-to-choose-an-erc-20-approval-cap-for-safer-bridging-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/how-to-choose-an-erc-20-approval-cap-for-safer-bridging-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://aboutdefi.github.io/assets/covers/how-to-choose-an-erc-20-approval-cap-for-safer-bridging-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aboutdefi.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How to choose an ERC-20 approval cap for safer bridging",
+          "item": "https://aboutdefi.github.io/how-to-choose-an-erc-20-approval-cap-for-safer-bridging/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://aboutdefi.github.io/#org",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://aboutdefi.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://aboutdefi.github.io/editorial-policy/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aboutdefi.github.io/#website",
+      "name": "Blocktape",
+      "url": "https://aboutdefi.github.io/",
+      "publisher": {
+        "@id": "https://aboutdefi.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Blocktape reports crypto news: exchange and market moves, protocol upgrades, token launches, security incidents, regulation and enforcement across chains."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aboutdefi.github.io/how-to-choose-an-erc-20-approval-cap-for-safer-bridging/#webpage",
+      "url": "https://aboutdefi.github.io/how-to-choose-an-erc-20-approval-cap-for-safer-bridging/",
+      "name": "Unlimited vs exact token approval: choose the safer cap",
+      "isPartOf": {
+        "@id": "https://aboutdefi.github.io/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1723f48" href="#main">Skip to main content</a>
+<header class="s7ad23b1">
+  <div class="s391985a s96dce8e">
+    <a class="se6ac7dd" href="/">Blocktape</a>
+    <p class="s0856806">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s391985a s769e092">
+  <div class="sa3952f2">
+    <header class="s4d4a408">
+      <h1 class="se0278f7">How to choose an ERC-20 approval cap for safer bridging</h1>
+<p class="sd06bb4e">Unlimited vs exact token approval: exact is safer for occasional lifi bridge transfers; unlimited saves an approve transaction for frequent repeat moves.</p>      <p class="s9113865">
+        <span class="s12e7d28">The Blocktape Editors</span>
+        <span class="s27d9430"><time class="sf928d55" datetime="2026-11-28T06:00:39+00:00">Nov 28, 2026 · 06:00 UTC</time><span class="sd47928e">2 min read</span></span>
+        <span class="s2da8688">d02913</span>
+      </p>
+    </header>
+    <figure class="s154f77a"><img width="1200" height="630" fetchpriority="high" class="scecec1a" src="/assets/covers/how-to-choose-an-erc-20-approval-cap-for-safer-bridging.jpg" alt="How to choose an ERC-20 approval cap for safer bridging"></figure>
+    <div class="s4d974d2">
+      <p>After setting up a 500 USDC lifi bridge transfer, choose exact approval: it limits the contract to the amount you intend to send and is safer for occasional transfers.</p>
+<p>ERC-20 approval sets how much a contract can spend with <em>transferFrom</em>. With an exact approval of 500 USDC, the transfer spends that allowance down to zero, leaving no standing allowance to revoke afterward.</p>
+<h2>Which approval should you choose?</h2>
+<p>Exact approval suits occasional transfers; unlimited approval suits frequent repeat transfers when you accept ongoing exposure to save an approval transaction.</p>
+<p>For the 500 USDC transfer, an unlimited allowance lets the contract spend up to your full future USDC balance until you revoke it. That means a later compromise of the contract could put more of your USDC at risk than the transfer amount.</p>
+<p>Exact approval costs one approve transaction for each transfer. Unlimited costs an approval once, then leaves the allowance open for later transfers. For frequent, large-volume users, that can be worth the tradeoff if they periodically revoke allowances they no longer need.</p>
+<p>In MetaMask, edit the spending cap in the approval prompt to match the transfer amount before confirming. For more on reducing contract exposure, read these <a href="https://aboutcrypto.today/li-fi-bridge-four-ways-to-limit-risk-from-old-approvals/" rel="noopener">lifi bridge risk lessons</a>; the same allowance choice applies when a lifi bridge route asks to spend your tokens.</p>
+<h2>What else changes the approval decision?</h2>
+<h3>Is a Permit2 signature safer than an approval?</h3>
+<p>Not automatically. A Permit2 signature can specify an amount and expiry, but the permission still depends on what you sign and the token allowance granted to Permit2. Review both before signing.</p>
+<h3>What happens to my approval if the bridge contract is upgraded?</h3>
+<p>If an upgrade changes the code behind the same spender address, the token allowance remains attached to that address. Revoke it if you no longer want that address to spend your tokens.</p>
+<h3>Do I need a new approval for every chain?</h3>
+<p>Usually, yes: approvals belong to a token contract and spender address on a particular chain. Check the wallet prompt on the destination chain before confirming another transfer.</p>
+    </div>
+    <section class="s608c366">
+      <h2 class="sfd47c21">Related stories</h2>
+      <ul class="sa90e6d4">
+        <li><a href="/move-a-whole-crypto-portfolio-pick-the-right-chain-route/">Move a Whole Crypto Portfolio: Pick the Right Chain Route</a></li>
+        <li><a href="/reading-a-defi-smart-contract-audit-report/">Reading a DeFi Smart Contract Audit Report</a></li>
+        <li><a href="/stablecoin-yield-costs-price-a-10-000-position/">Stablecoin Yield Costs: Price a $10,000 Position</a></li>
+        <li><a href="/how-do-morpho-vaults-differ-from-morpho-blue-markets/">How do Morpho vaults differ from Morpho Blue markets?</a></li>
+      </ul>
+    </section>
+  </div>
+</article>
+</main>
+
+<footer class="s68d4aa4">
+  <div class="s391985a sb73b682">
+    <p class="sfe2a340">Blocktape</p>
+    <nav class="s68d87bb" aria-label="Site">
+      <ul>
+        <li><a href="/">Front page</a></li>
+        <li><a href="/archive/">All posts</a></li>
+        <li><a href="/about/">Masthead</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/editorial-policy/">Editorial policy</a></li>
+      </ul>
+    </nav>
+    <p class="s2c909db">Independent crypto coverage, for information only.</p>
+    <p class="s57d7fcf">© 2026 Blocktape</p>
+  </div>
+</footer>
+</body>
+</html>
